@@ -5,7 +5,7 @@ import projectCheckout from "@/assets/project-checkout.jpg";
 import projectRecall from "@/assets/project-recall.jpg";
 import projectCarrinho from "@/assets/project-carrinho.jpg";
 import projectLeads from "@/assets/project-leads.jpg";
-import projectPMO from "@/assets/project-pmo.jpg";
+import projectPMO from "@/assets/project-pmo-governance.svg";
 
 const projects = [
   {
@@ -49,11 +49,11 @@ const projects = [
     impact: "+15% conversão",
   },
   {
-    title: "Governança de PMO",
+    title: "Governança de Portfólio de TI",
     company: "Urbia Parques",
-    description: "Estruturação completa de governança de portfólio e PMO com aumento significativo na alocação de recursos.",
+    description: "Estruturei portfólios e programas de TI priorizados com WSJF, Matriz Impacto × Esforço e Business Value Score, com comitês executivos e dashboards de OKRs, KPIs e SLAs.",
     image: projectPMO,
-    tags: ["Governança", "PMO", "Portfólio"],
+    tags: ["Governança", "PMO", "WSJF"],
     impact: "+30% eficiência",
   },
 ];
