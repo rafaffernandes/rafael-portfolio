@@ -65,11 +65,11 @@ const Hero = () => {
         {/* Faixa de números — estilo "by the numbers" editorial */}
         <div className="mt-20 sm:mt-28 grid grid-cols-2 sm:grid-cols-4 border-t border-border">
           {stats.map((stat) => (
-            <div key={stat.label} className="border-r border-border last:border-r-0 py-8 pr-4">
-              <p className="font-display text-4xl sm:text-5xl font-bold text-foreground tabular-nums">
+            <div key={stat.label} className="border-r border-border last:border-r-0 pt-10 pb-8 pr-4">
+              <p className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground tabular-nums whitespace-nowrap">
                 {stat.value}
               </p>
-              <p className="mt-2 text-sm sm:text-base text-muted-foreground leading-snug">{stat.label}</p>
+              <p className="mt-3 text-sm sm:text-base text-muted-foreground leading-snug">{stat.label}</p>
             </div>
           ))}
         </div>

@@ -196,10 +196,10 @@ const Experience = () => {
                 )}
 
                 {role.impacts && (
-                  <div className="flex flex-wrap gap-x-12 gap-y-5 border-t border-border pt-6">
+                  <div className="flex flex-wrap gap-x-12 gap-y-5 border-t border-border pt-8">
                     {role.impacts.map((impact) => (
                       <div key={impact.description} className="max-w-[240px]">
-                        <p className="font-display text-3xl sm:text-4xl font-bold text-foreground tabular-nums">
+                        <p className="font-display text-3xl sm:text-4xl font-bold text-foreground tabular-nums whitespace-nowrap">
                           {impact.metric}
                         </p>
                         <p className="text-sm text-muted-foreground leading-snug mt-1">{impact.description}</p>
