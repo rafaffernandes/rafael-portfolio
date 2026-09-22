@@ -5,7 +5,6 @@ import projectCheckout from "@/assets/project-checkout.jpg";
 import projectRecall from "@/assets/project-recall.jpg";
 import projectCarrinho from "@/assets/project-carrinho.jpg";
 import projectLeads from "@/assets/project-leads.jpg";
-import projectPMO from "@/assets/project-pmo-governance.svg";
 
 const projects = [
   {
@@ -52,7 +51,7 @@ const projects = [
     title: "Governança de Portfólio de TI",
     company: "Urbia Parques",
     description: "Estruturei portfólios e programas de TI priorizados com WSJF, Matriz Impacto × Esforço e Business Value Score, com comitês executivos e dashboards de OKRs, KPIs e SLAs.",
-    image: projectPMO,
+    image: null,
     tags: ["Governança", "PMO", "WSJF"],
     impact: "+30% eficiência",
   },
@@ -78,11 +77,20 @@ const Projects = () => {
                 className="group bg-background text-left flex flex-col"
               >
                 <div className="relative h-44 overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
-                  />
+                  {project.image ? (
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                    />
+                  ) : (
+                    <div className="w-full h-full bg-foreground flex items-center justify-center px-6 transition-smooth group-hover:bg-accent">
+                      <p className="font-mono text-xs sm:text-sm uppercase tracking-[0.3em] text-background text-center leading-relaxed">
+                        Governança
+                        <br />&amp; PMO
+                      </p>
+                    </div>
+                  )}
                   <span className="absolute top-0 left-0 bg-background font-mono text-xs px-2 py-1 text-muted-foreground">
                     {String(index + 1).padStart(2, "0")}
                   </span>
