@@ -15,17 +15,15 @@ const About = () => {
 
           {/* Texto principal — coluna de leitura, não centralizado */}
           <p className="max-w-4xl font-display text-3xl sm:text-4xl leading-snug text-foreground/90 text-balance font-medium">
-            Product Manager com +7 anos de experiência em produtos digitais de grande escala nos
-            setores automotivo, varejo e entretenimento. Minha especialidade é entender a dor do
-            negócio e traduzi-la em entregas que geram valor mensurável.
+            Product Manager com +7 anos de experiência em produtos digitais nos setores automotivo,
+            varejo e entretenimento. Minha especialidade é simples: entender a dor do negócio e
+            transformar isso em entrega.
           </p>
           <p className="max-w-3xl text-lg sm:text-xl text-muted-foreground leading-relaxed -mt-8">
-            Conduzo o ciclo completo de produto — do Discovery com usuários reais ao Delivery,
-            passando por roadmap estratégico, integrações sistêmicas via APIs, automação de fluxos
-            operacionais e liderança de squads multidisciplinares. Tenho domínio em estratégia de
-            produto, ecossistemas de leads e AI Product Building com LLMs. Especialista certificado
-            pela Tera em AI Product Building: projeto e escalo produtos onde a automação inteligente
-            resolve problemas reais de negócio e funciona como alavanca de eficiência e receita.
+            Conduzo o ciclo completo de produto: discovery com usuário real, roadmap, integração de
+            sistemas via API, automação de processo, liderança de squad. Sou especialista certificado
+            pela Tera em AI Product Building — hoje é a minha principal frente, projetando e escalando
+            produtos que resolvem um problema real de negócio.
           </p>
 
           {/* Blocos de destaque — sem sombra, com traço fino */}
@@ -66,8 +64,8 @@ const About = () => {
                 Otimização de processos e eficiência operacional
               </p>
               <p className="text-muted-foreground leading-relaxed text-[15px]">
-                Traduzo a visão de negócio em produtos digitais que melhoram e automatizam operações
-                complexas, gerando ganhos mensuráveis de tempo e receita.
+                Traduzo visão de negócio em produto que automatiza operação complexa. O ganho
+                aparece em tempo e receita, como nos exemplos abaixo.
               </p>
               <ul className="space-y-3 pt-2 border-t border-border">
                 {[
@@ -93,8 +91,8 @@ const About = () => {
                 Automotivo, Varejo e Educação
               </p>
               <p className="text-muted-foreground leading-relaxed text-[15px]">
-                Experiência profunda em Automotivo, com passagens por Varejo e Educação — sempre
-                entrando quando o negócio precisa traduzir escala em produto.
+                Experiência concentrada em Automotivo, com passagens por Varejo e Educação. Três
+                setores, um padrão: escala que precisa virar produto.
               </p>
 
               <div className="pt-2 border-t border-border space-y-2">

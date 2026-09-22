@@ -21,7 +21,7 @@ const roles: Role[] = [
     period: "Out 2023 — Presente",
     duration: "~3 anos",
     summary:
-      "Lidero o Time de IA e o Time de Integrações com Montadoras. Do agente que qualifica leads sozinho à automação que conecta 4 montadoras em escala — sou eu que decido o que constrói e por quê.",
+      "Lidero o Time de IA e o Time de Integrações com Montadoras na Mobiauto. Decido o que construímos em IA e por quê — do SDR Agent que qualifica leads sozinho às integrações que conectam 4 montadoras.",
     bulletGroups: [
       {
         title: "IA & Agentes",
@@ -32,7 +32,7 @@ const roles: Role[] = [
           "Defini guardrails e adequação LGPD do SDR Agent junto com o jurídico",
           "Liderei a migração de modelos de LLM para versões mais atuais, sem deixar o custo explodir",
           "Levei o Studio 360 (IA de tratamento de fundo em fotos de veículos) da POC à especificação de produção",
-          "MobiInteligente: IA proprietária que atua como consultor para vendedores e lojistas",
+          "MobiInteligente: IA proprietária que é consultora de vendedores e lojistas",
         ],
       },
       {
@@ -72,7 +72,7 @@ const roles: Role[] = [
     period: "Set 2022 — Jan 2023",
     duration: "5 meses",
     summary:
-      "Estruturei a governança de portfólio de TI da companhia — de comitês executivos a rituais de priorização — equilibrando execução tática com visão estratégica.",
+      "Estruturei a governança de portfólio de TI da companhia: comitês executivos, rituais de priorização, dashboards para a diretoria. Tática e estratégia, ao mesmo tempo.",
     bullets: [
       "Estruturei portfólios e programas de TI priorizados com WSJF, Matriz Impacto × Esforço e Business Value Score",
       "Conduzi comitês executivos, reportando status, riscos e dependências para apoiar decisões",
@@ -87,7 +87,7 @@ const roles: Role[] = [
     period: "Mai 2019 — Ago 2022",
     duration: "3 anos e 4 meses",
     summary:
-      "Liderança de produtos digitais em um dos maiores players de varejo do Brasil, orientada por dados, OKRs e experimentação contínua.",
+      "Produtos digitais em um dos maiores varejistas do Brasil. Decisão orientada por dado, não por opinião — testava hipótese em A/B antes de escalar qualquer coisa.",
     bullets: [
       "Redesenho completo da página de Checkout, com aumento direto de retenção e conversão digital",
       "Fluxo de Carrinho Esquecido com cupons personalizados: recuperação de receita e reengajamento",
@@ -107,7 +107,7 @@ const roles: Role[] = [
     period: "Fev 2018 — Abr 2019",
     duration: "1 ano e 3 meses",
     summary:
-      "Meu primeiro papel de produto: gestor focal do cliente BMW, na interface entre negócio, tecnologia e governança — combinando atuação de Product Owner com práticas de PMO.",
+      "Meu primeiro papel de produto: gestor focal do cliente BMW, na interface entre negócio, tecnologia e governança. Product Owner de um lado, PMO do outro.",
     bullets: [
       "Refinamento de requisitos funcionais e técnicos, backlog estruturado com critérios de aceite",
       "Defini visão e roadmap da Plataforma Nacional de Recall, conectando clientes, concessionárias e mecânicos",
@@ -125,9 +125,9 @@ const Experience = () => {
         <div className="max-w-7xl mx-auto space-y-20">
           <SectionHeading
             index="02"
-            eyebrow="Trajetória profissional — 7+ anos"
+            eyebrow="Trajetória profissional | 7+ anos"
             title="De analista de negócios a Product Manager de IA"
-            intro="Cinco papéis, uma linha: cada posição ampliou o escopo — de requisito e backlog a estratégia de produto, governança de portfólio e, hoje, liderança de times de IA."
+            intro="Cinco papéis em cinco empresas. Comecei escrevendo requisito e organizando backlog; hoje lidero um time de IA. O escopo cresceu a cada troca."
           />
 
           <div className="relative">

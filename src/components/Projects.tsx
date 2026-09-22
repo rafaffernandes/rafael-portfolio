@@ -11,7 +11,7 @@ const projects = [
   {
     title: "Central de Faturamento",
     company: "Mobiauto",
-    description: "Automação B2B que transformou a eficiência operacional, reduzindo drasticamente o tempo de processamento de cobranças.",
+    description: "Módulo criado do zero para automatizar boleto e consórcio. Cobrança que levava dias virou processo de poucas horas.",
     image: projectFaturamento,
     tags: ["Automação com IA", "Integração de Sistemas", "B2B"],
     impact: "-25% tempo",
@@ -19,7 +19,7 @@ const projects = [
   {
     title: "Redesenho do Checkout",
     company: "Via Varejo",
-    description: "Otimização da jornada de compra digital que resultou em aumento significativo da taxa de conversão.",
+    description: "Redesenho completo do checkout, com foco em retenção. Testei mudança por mudança via A/B antes de rodar pra base toda.",
     image: projectCheckout,
     tags: ["E-commerce", "Otimização", "UX"],
     impact: "+10% conversão",
@@ -27,7 +27,7 @@ const projects = [
   {
     title: "Plataforma de Recall",
     company: "BMW",
-    description: "Plataforma nacional de gestão inteligente de recall com integração de concessionárias e otimização de agendas.",
+    description: "Plataforma nacional conectando cliente, concessionária e mecânico: consulta de recall, agendamento e gestão de boxes num fluxo só.",
     image: projectRecall,
     tags: ["Automotivo", "Integração de Sistemas", "Nacional"],
     impact: "-40% tempo",
@@ -35,7 +35,7 @@ const projects = [
   {
     title: "Recuperação de Receita",
     company: "Via Varejo",
-    description: "Fluxo estratégico de carrinho esquecido que recuperou receita significativa através de automação inteligente.",
+    description: "Fluxo de carrinho esquecido com cupom personalizado, disparado automaticamente pra quem saiu sem comprar.",
     image: projectCarrinho,
     tags: ["E-commerce", "Automação", "Receita"],
     impact: "+R$1,5M/ano",
@@ -43,7 +43,7 @@ const projects = [
   {
     title: "SDR Agent — Qualificação de Leads",
     company: "Mobiauto",
-    description: "Agente de IA criado do zero que qualifica leads sozinho, antes do vendedor entrar em cena — com guardrails e adequação LGPD.",
+    description: "Agente de IA criado do zero que qualifica lead sozinho, antes do vendedor entrar em cena. Guardrails e adequação LGPD definidos junto ao jurídico.",
     image: projectLeads,
     tags: ["IA & Agentes", "LLM", "CRM"],
     impact: "+15% conversão",
@@ -51,7 +51,7 @@ const projects = [
   {
     title: "Governança de Portfólio de TI",
     company: "Urbia Parques",
-    description: "Estruturei portfólios e programas de TI priorizados com WSJF, Matriz Impacto × Esforço e Business Value Score, com comitês executivos e dashboards de OKRs, KPIs e SLAs.",
+    description: "Portfólio de TI priorizado com WSJF e Matriz Impacto × Esforço. Comitê executivo, dashboard de OKR e KPI: a diretoria via status sem precisar perguntar.",
     image: projectPMO,
     tags: ["Governança", "PMO", "WSJF"],
     impact: "+30% eficiência",
@@ -67,7 +67,7 @@ const Projects = () => {
             index="04"
             eyebrow="Estudos de caso"
             title="Projetos em destaque"
-            intro="Seis entregas que demonstram impacto mensurável em escala — do agente de IA que qualifica leads sozinho à plataforma nacional de recall."
+            intro="Seis entregas, seis contextos diferentes. Cada uma resolveu um problema real, com número pra provar."
           />
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border border border-border">

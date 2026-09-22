@@ -19,7 +19,7 @@ const Footer = () => {
           <div>
             <p className="font-display text-lg font-semibold">Rafael Fernandes</p>
             <p className="text-background/60 text-sm mt-0.5">
-              Product Manager Sênior — IA, Agentes &amp; Integrações
+              Product Manager Sênior | IA, Agentes &amp; Integrações
             </p>
           </div>
 

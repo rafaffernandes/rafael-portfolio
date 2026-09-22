@@ -28,7 +28,7 @@ const Contact = () => {
             index="05"
             eyebrow="Contato"
             title="Vamos trabalhar juntos?"
-            intro="Aberto a conversas sobre oportunidades, desafios de produto de IA e novos projetos."
+            intro="Topo conversar sobre oportunidade, desafio de produto ou só trocar ideia sobre IA."
           />
 
           <div className="border-t border-border">
