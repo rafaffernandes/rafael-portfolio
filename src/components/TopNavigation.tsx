@@ -56,9 +56,6 @@ const TopNavigation = () => {
             className="font-display text-xl font-semibold tracking-tight text-foreground"
           >
             RF
-            <span className="hidden sm:inline text-muted-foreground font-sans text-base font-normal ml-2 tracking-normal">
-              — Rafael Fernandes
-            </span>
           </button>
 
           <div className="hidden md:flex items-center gap-1">
