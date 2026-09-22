@@ -16,7 +16,7 @@ const Hero = () => {
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-6 items-start">
           {/* Coluna de texto */}
           <div className="lg:col-span-8 space-y-10 animate-in fade-in slide-in-from-bottom-4 duration-700">
-            <span className="eyebrow text-sm">Product Manager Sênior | Estratégia de Produto</span>
+            <span className="eyebrow text-lg sm:text-xl">Product Manager Sênior | Estratégia de Produto</span>
 
             <h1 className="font-display text-7xl sm:text-8xl lg:text-9xl font-bold tracking-tight leading-[0.92] text-balance">
               Rafael

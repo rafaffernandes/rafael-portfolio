@@ -53,10 +53,10 @@ const TopNavigation = () => {
         <div className="flex items-center justify-between h-16">
           <button
             onClick={() => scrollToSection("home")}
-            className="font-display text-lg font-semibold tracking-tight text-foreground"
+            className="font-display text-xl font-semibold tracking-tight text-foreground"
           >
             RF
-            <span className="hidden sm:inline text-muted-foreground font-sans text-sm font-normal ml-2 tracking-normal">
+            <span className="hidden sm:inline text-muted-foreground font-sans text-base font-normal ml-2 tracking-normal">
               — Rafael Fernandes
             </span>
           </button>
@@ -68,11 +68,11 @@ const TopNavigation = () => {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className={`group flex items-center gap-1.5 px-3 py-2 font-mono text-xs uppercase tracking-[0.15em] transition-smooth ${
+                  className={`group flex items-center gap-2 px-3 py-2 font-mono text-sm uppercase tracking-[0.15em] transition-smooth ${
                     isActive ? "text-accent" : "text-muted-foreground hover:text-foreground"
                   }`}
                 >
-                  <span className="text-[10px] opacity-60">{item.index}</span>
+                  <span className="text-xs opacity-60">{item.index}</span>
                   <span
                     className={`border-b ${
                       isActive ? "border-accent" : "border-transparent group-hover:border-foreground/30"
@@ -87,7 +87,7 @@ const TopNavigation = () => {
 
           <button
             onClick={() => scrollToSection("contact")}
-            className="md:hidden font-mono text-xs uppercase tracking-[0.15em] text-accent"
+            className="md:hidden font-mono text-sm uppercase tracking-[0.15em] text-accent"
           >
             Contato
           </button>

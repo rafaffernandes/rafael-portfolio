@@ -137,7 +137,7 @@ Bordas finas no lugar de sombra profunda; tipografia faz o trabalho de hierarqui
 
   /* Rótulo pequeno, tracked, mono — usado como "olho" editorial acima de títulos */
   .eyebrow {
-    @apply font-mono text-xs uppercase tracking-[0.25em] text-accent;
+    @apply font-mono text-sm uppercase tracking-[0.2em] text-accent;
   }
 
   /* Numeração de seção estilo revista (01 — 02 — 03) */
