@@ -37,7 +37,7 @@ const About = () => {
               <p className="font-display text-2xl font-bold text-foreground">
                 Estratégia de produto orientada a dado
               </p>
-              <p className="text-muted-foreground leading-relaxed text-[15px]">
+              <p className="text-muted-foreground leading-relaxed text-lg">
                 Traduzo dor de negócio em decisão de roadmap, priorização e execução — sempre
                 apoiado em dado, não em opinião.
               </p>
@@ -48,7 +48,7 @@ const About = () => {
                   <>Plataforma de recall BMW: <strong className="text-foreground font-semibold">-40%</strong> no tempo médio de agendamento</>,
                   <>Gestão de leads com Kanban inteligente e priorização por dado — <strong className="text-foreground font-semibold">+15%</strong> de conversão</>,
                 ].map((item, idx) => (
-                  <li key={idx} className="flex gap-3 text-sm text-muted-foreground leading-relaxed">
+                  <li key={idx} className="flex gap-3 text-base text-muted-foreground leading-relaxed">
                     <span className="font-mono text-accent shrink-0">0{idx + 1}</span>
                     <span>{item}</span>
                   </li>
@@ -64,7 +64,7 @@ const About = () => {
               <p className="font-display text-2xl font-bold text-foreground">
                 Produtos de IA na Mobiauto
               </p>
-              <p className="text-muted-foreground leading-relaxed text-[15px]">
+              <p className="text-muted-foreground leading-relaxed text-lg">
                 Lidero o Time de IA e o Time de Integrações com Montadoras — aplicando a mesma
                 leitura estratégica em contexto de automação inteligente.
               </p>
@@ -75,7 +75,7 @@ const About = () => {
                   <>Processo de avaliação de qualidade e alucinação de LLMs, com scoring automatizado em lote</>,
                   <>Guardrails e adequação LGPD definidos junto ao jurídico</>,
                 ].map((item, idx) => (
-                  <li key={idx} className="flex gap-3 text-sm text-muted-foreground leading-relaxed">
+                  <li key={idx} className="flex gap-3 text-base text-muted-foreground leading-relaxed">
                     <span className="font-mono text-accent shrink-0">0{idx + 1}</span>
                     <span>{item}</span>
                   </li>
@@ -91,7 +91,7 @@ const About = () => {
               <p className="font-display text-2xl font-bold text-foreground">
                 Automotivo, Varejo e Educação
               </p>
-              <p className="text-muted-foreground leading-relaxed text-[15px]">
+              <p className="text-muted-foreground leading-relaxed text-lg">
                 Experiência concentrada em Automotivo, com passagens por Varejo e Educação. Três
                 setores, um padrão: escala que precisa virar produto.
               </p>
@@ -99,10 +99,10 @@ const About = () => {
               <div className="pt-2 border-t border-border space-y-2">
                 <h4 className="font-mono text-xs uppercase tracking-[0.2em] text-foreground">Automotivo</h4>
                 <ul className="space-y-2">
-                  <li className="text-sm text-muted-foreground leading-relaxed">
+                  <li className="text-base text-muted-foreground leading-relaxed">
                     <strong className="text-foreground font-semibold">Mobiauto</strong> — IA, agentes e integração de montadoras
                   </li>
-                  <li className="text-sm text-muted-foreground leading-relaxed">
+                  <li className="text-base text-muted-foreground leading-relaxed">
                     Gestor focal do cliente <strong className="text-foreground font-semibold">BMW</strong> — plataforma nacional de recall
                   </li>
                 </ul>
@@ -111,10 +111,10 @@ const About = () => {
               <div className="pt-4 space-y-2">
                 <h4 className="font-mono text-xs uppercase tracking-[0.2em] text-foreground">Varejo &amp; Educação</h4>
                 <ul className="space-y-2">
-                  <li className="text-sm text-muted-foreground leading-relaxed">
+                  <li className="text-base text-muted-foreground leading-relaxed">
                     Jornada de compra digital na <strong className="text-foreground font-semibold">Via</strong> (Casas Bahia / Ponto Frio) — selo RA 1000
                   </li>
-                  <li className="text-sm text-muted-foreground leading-relaxed">
+                  <li className="text-base text-muted-foreground leading-relaxed">
                     Squad de LMS na <strong className="text-foreground font-semibold">Universidade Cruzeiro do Sul</strong>
                   </li>
                 </ul>

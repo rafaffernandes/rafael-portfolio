@@ -51,7 +51,7 @@ const Skills = () => {
                 </div>
                 <ul className="space-y-3">
                   {category.skills.map((skill) => (
-                    <li key={skill} className="text-[15px] text-muted-foreground leading-snug flex gap-2">
+                    <li key={skill} className="text-lg text-muted-foreground leading-snug flex gap-2">
                       <span className="text-accent">–</span>
                       <span>{skill}</span>
                     </li>

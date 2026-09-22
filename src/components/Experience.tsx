@@ -173,7 +173,7 @@ const Experience = () => {
                         </h4>
                         <ul className="space-y-2.5">
                           {group.items.map((item) => (
-                            <li key={item} className="text-[15px] text-muted-foreground leading-relaxed flex gap-2.5">
+                            <li key={item} className="text-lg text-muted-foreground leading-relaxed flex gap-2.5">
                               <span className="text-accent shrink-0">▸</span>
                               <span>{item}</span>
                             </li>
@@ -186,7 +186,7 @@ const Experience = () => {
                   role.bullets && (
                     <ul className="max-w-3xl space-y-2.5 mb-8">
                       {role.bullets.map((item) => (
-                        <li key={item} className="text-[15px] text-muted-foreground leading-relaxed flex gap-2.5">
+                        <li key={item} className="text-lg text-muted-foreground leading-relaxed flex gap-2.5">
                           <span className="text-accent shrink-0">▸</span>
                           <span>{item}</span>
                         </li>

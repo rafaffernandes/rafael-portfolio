@@ -115,7 +115,7 @@ const Projects = () => {
                   <p className="text-xs font-mono uppercase tracking-[0.15em] text-accent mt-1.5 mb-3">
                     {project.company}
                   </p>
-                  <p className="text-[15px] text-muted-foreground leading-relaxed mb-4 flex-1">
+                  <p className="text-lg text-muted-foreground leading-relaxed mb-4 flex-1">
                     {project.description}
                   </p>
                   <p className="text-xs text-muted-foreground/70 mb-4">{project.tags.join(" / ")}</p>
