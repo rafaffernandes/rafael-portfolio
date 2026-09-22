@@ -20,11 +20,13 @@ const About = () => {
             negócio, decidir com base em dado e priorizar com visão estratégica.
           </p>
           <p className="max-w-3xl text-lg sm:text-xl text-muted-foreground leading-relaxed -mt-8">
-            Do discovery com usuário real ao delivery. No meio disso: roadmap, integração de sistema,
-            automação de processo, squad multidisciplinar. Estudo o mercado antes de construir —
-            foi assim que cheguei ao SDR Agent, por exemplo. Formação contínua pela Tera: Digital
-            Product Leadership e AI Product Management, sempre acompanhando pra onde a profissão
-            está indo.
+            Não construo por acaso: discovery com usuário real, hipótese validada antes de virar
+            backlog, priorização com dado quando a opinião empata. Depois vem a execução — roadmap,
+            integração de sistema via API, automação de processo, squad multidisciplinar puxando na
+            mesma direção. Foi assim que cheguei ao SDR Agent: estudei o mercado, vi a lacuna,
+            construí. Sigo me formando pela Tera (AI Product Builders, Digital Product Leadership,
+            AI Product Manager) porque a curva de IA aplicada a produto anda rápido e eu quero
+            estar na frente dela.
           </p>
 
           {/* Blocos de destaque — sem sombra, com traço fino */}
