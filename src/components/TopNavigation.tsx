@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 
 const navItems = [
-  { id: "about", label: "Trajetória", index: "01" },
-  { id: "experience", label: "Experiências", index: "02" },
-  { id: "skills", label: "Habilidades", index: "03" },
-  { id: "projects", label: "Projetos", index: "04" },
-  { id: "contact", label: "Contato", index: "05" },
+  { id: "about", label: "Trajetória" },
+  { id: "experience", label: "Experiências" },
+  { id: "skills", label: "Habilidades" },
+  { id: "projects", label: "Projetos" },
+  { id: "contact", label: "Contato" },
 ];
 
 const TopNavigation = () => {
@@ -65,11 +65,10 @@ const TopNavigation = () => {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className={`group flex items-center gap-2 px-3 py-2 font-mono text-sm uppercase tracking-[0.15em] transition-smooth ${
+                  className={`group flex items-center px-3 py-2 font-mono text-sm uppercase tracking-[0.15em] transition-smooth ${
                     isActive ? "text-accent" : "text-muted-foreground hover:text-foreground"
                   }`}
                 >
-                  <span className="text-xs opacity-60">{item.index}</span>
                   <span
                     className={`border-b ${
                       isActive ? "border-accent" : "border-transparent group-hover:border-foreground/30"
