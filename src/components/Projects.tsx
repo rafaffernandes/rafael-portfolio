@@ -62,7 +62,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 sm:py-28 bg-secondary/40">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto space-y-16">
+        <div className="max-w-7xl mx-auto space-y-16">
           <SectionHeading
             index="04"
             eyebrow="Estudos de caso"

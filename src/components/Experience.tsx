@@ -41,7 +41,7 @@ const Experience = () => {
   return (
     <section id="experience" className="py-20 sm:py-28 bg-secondary/40">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-5xl mx-auto space-y-16">
+        <div className="max-w-7xl mx-auto space-y-16">
           <SectionHeading
             index="02"
             eyebrow="Trajetória profissional"

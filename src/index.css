@@ -13,34 +13,34 @@ Bordas finas no lugar de sombra profunda; tipografia faz o trabalho de hierarqui
   :root {
     /* Papel — fundo quente, não branco puro */
     --background: 42 33% 97%;
-    --foreground: 222 45% 10%; /* Tinta */
+    --foreground: 225 24% 23%; /* Tinta suave */
 
     --card: 40 28% 95%;
-    --card-foreground: 222 45% 10%;
+    --card-foreground: 225 24% 23%;
 
     --popover: 42 33% 97%;
-    --popover-foreground: 222 45% 10%;
+    --popover-foreground: 225 24% 23%;
 
     /* Primary = tinta (texto/CTAs de contraste) */
-    --primary: 222 45% 10%;
+    --primary: 225 24% 23%;
     --primary-foreground: 42 33% 97%;
 
     --secondary: 40 20% 91%;
-    --secondary-foreground: 222 45% 10%;
+    --secondary-foreground: 225 24% 23%;
 
     --muted: 40 18% 91%;
-    --muted-foreground: 220 12% 38%;
+    --muted-foreground: 220 12% 42%;
 
-    /* Accent — âmbar, usado com moderação */
-    --accent: 36 92% 50%;
-    --accent-foreground: 222 45% 10%;
+    /* Accent — terracota, usado com moderação */
+    --accent: 17 52% 50%;
+    --accent-foreground: 42 33% 97%;
 
     --destructive: 5 65% 45%;
     --destructive-foreground: 42 33% 97%;
 
     --border: 40 15% 83%;
     --input: 40 15% 83%;
-    --ring: 36 92% 50%;
+    --ring: 17 52% 50%;
 
     --radius: 0.25rem;
 
@@ -49,56 +49,56 @@ Bordas finas no lugar de sombra profunda; tipografia faz o trabalho de hierarqui
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 42 33% 97%;
-    --sidebar-foreground: 222 45% 10%;
-    --sidebar-primary: 222 45% 10%;
+    --sidebar-foreground: 225 24% 23%;
+    --sidebar-primary: 225 24% 23%;
     --sidebar-primary-foreground: 42 33% 97%;
     --sidebar-accent: 40 20% 91%;
-    --sidebar-accent-foreground: 222 45% 10%;
+    --sidebar-accent-foreground: 225 24% 23%;
     --sidebar-border: 40 15% 83%;
-    --sidebar-ring: 36 92% 50%;
+    --sidebar-ring: 17 52% 50%;
   }
 
   .dark {
-    /* Tinta — fundo quase preto azulado, texto papel */
-    --background: 222 45% 7%;
+    /* Tinta — fundo escuro suave, texto papel */
+    --background: 225 26% 11%;
     --foreground: 42 28% 95%;
 
-    --card: 222 40% 10%;
+    --card: 225 24% 14%;
     --card-foreground: 42 28% 95%;
 
-    --popover: 222 45% 7%;
+    --popover: 225 26% 11%;
     --popover-foreground: 42 28% 95%;
 
     --primary: 42 28% 95%;
-    --primary-foreground: 222 45% 7%;
+    --primary-foreground: 225 26% 11%;
 
-    --secondary: 222 30% 14%;
+    --secondary: 225 20% 18%;
     --secondary-foreground: 42 28% 95%;
 
-    --muted: 222 30% 14%;
+    --muted: 225 20% 18%;
     --muted-foreground: 220 12% 65%;
 
-    --accent: 36 92% 55%;
-    --accent-foreground: 222 45% 7%;
+    --accent: 17 65% 58%;
+    --accent-foreground: 225 26% 11%;
 
     --destructive: 5 60% 45%;
     --destructive-foreground: 42 28% 95%;
 
-    --border: 222 25% 20%;
-    --input: 222 25% 20%;
-    --ring: 36 92% 55%;
+    --border: 225 18% 24%;
+    --input: 225 18% 24%;
+    --ring: 17 65% 58%;
 
     --shadow-card: 0 1px 2px hsl(0 0% 0% / 0.3);
     --shadow-card-hover: 0 4px 16px hsl(0 0% 0% / 0.4);
 
-    --sidebar-background: 222 45% 7%;
+    --sidebar-background: 225 26% 11%;
     --sidebar-foreground: 42 28% 95%;
     --sidebar-primary: 42 28% 95%;
-    --sidebar-primary-foreground: 222 45% 7%;
-    --sidebar-accent: 222 30% 14%;
+    --sidebar-primary-foreground: 225 26% 11%;
+    --sidebar-accent: 225 20% 18%;
     --sidebar-accent-foreground: 42 28% 95%;
-    --sidebar-border: 222 25% 20%;
-    --sidebar-ring: 36 92% 55%;
+    --sidebar-border: 225 18% 24%;
+    --sidebar-ring: 17 65% 58%;
   }
 }
 
