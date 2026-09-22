@@ -43,7 +43,7 @@ const About = () => {
               <ul className="space-y-3 pt-2 border-t border-border">
                 {[
                   <>Central de Faturamento (2025): <strong className="text-foreground font-semibold">-25%</strong> no tempo médio, com boleto e consórcio automatizados</>,
-                  <>6 montadoras conectadas em escala via Salesforce/Mulesoft — backend robusto, não automação por IA</>,
+                  <>7 montadoras conectadas em escala via Salesforce/Mulesoft — backend robusto, não automação por IA</>,
                   <>Plataforma de recall BMW: <strong className="text-foreground font-semibold">-40%</strong> no tempo médio de agendamento</>,
                   <>Gestão de leads com Kanban inteligente e priorização por dado — <strong className="text-foreground font-semibold">+15%</strong> de conversão</>,
                 ].map((item, idx) => (

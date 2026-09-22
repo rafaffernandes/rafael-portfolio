@@ -21,7 +21,7 @@ const roles: Role[] = [
     period: "Out 2023 — Presente",
     duration: "~3 anos",
     summary:
-      "Lidero o Time de IA e o Time de Integrações com Montadoras na Mobiauto. Penso a estratégia (priorização, roadmap, decisão orientada a dado) e também executo: dos agentes de IA em produção às integrações que conectam a Mobiauto a 6 montadoras, entre elas Stellantis, BMW, Volkswagen e Renault.",
+      "Lidero o Time de IA e o Time de Integrações com Montadoras na Mobiauto. Penso a estratégia (priorização, roadmap, decisão orientada a dado) e também executo: dos agentes de IA em produção às integrações que conectam a Mobiauto a 7 montadoras — Stellantis, BMW, Volkswagen, Renault, BYD, GWM e Dealy.",
     bulletGroups: [
       {
         title: "IA & Agentes",
@@ -39,7 +39,7 @@ const roles: Role[] = [
       {
         title: "Integrações",
         items: [
-          "Conecto 6 montadoras ao MobiGestor em escala via Salesforce/Mulesoft, entre elas Stellantis, BMW, Volkswagen (incl. Banco VW) e Renault",
+          "Conecto 7 montadoras ao MobiGestor em escala via Salesforce/Mulesoft: Stellantis, BMW, Volkswagen (incl. Banco VW), Renault, BYD, GWM e Dealy",
           "Portais integrados: Mercado Livre, OLX e EasyCar",
           "Implementei o CheckPrice do discovery ao delivery, com dois produtos: consulta veicular (Capivara) e consulta de recall — mapeando toda a integração de APIs",
           "Atuo na priorização dos produtos core da companhia para mover KPIs conforme a necessidade do negócio",
@@ -60,7 +60,7 @@ const roles: Role[] = [
     impacts: [
       { metric: "-25%", description: "tempo médio de faturamento (2025)" },
       { metric: "+15%", description: "conversão de leads" },
-      { metric: "6", description: "montadoras conectadas em escala" },
+      { metric: "7", description: "montadoras conectadas em escala" },
     ],
   },
   {
