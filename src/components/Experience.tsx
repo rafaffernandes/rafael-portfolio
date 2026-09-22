@@ -1,104 +1,83 @@
-import { Building2, TrendingUp, Users } from "lucide-react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import SectionHeading from "@/components/SectionHeading";
 
 const experiences = [
   {
     company: "MIDIAUTO LTDA",
     products: "Mobigestor e Primeira Mão",
-    focus: "Liderança da estratégia e roadmap para escalar a operação, automatizar processos (com IA) e integrar sistemas no setor automotivo",
+    focus: "Liderança da estratégia e roadmap para escalar a operação, automatizar processos (com IA) e integrar sistemas no setor automotivo.",
     impacts: [
-      { metric: "-25%", description: "tempo médio de faturamento (Central de Faturamento)" },
-      { metric: "+15%", description: "taxa de conversão de vendas (Novo fluxo de leads quentes)" }
+      { metric: "-25%", description: "tempo médio de faturamento" },
+      { metric: "+15%", description: "conversão de vendas em leads quentes" },
     ],
-    icon: Building2,
   },
   {
     company: "Urbia Parques",
     products: "PMO e Governança de TI",
-    focus: "Liderança do PMO e estruturação da governança de portfólios de TI",
-    impacts: [
-      { metric: "+30%", description: "eficiência de alocação de recursos" }
-    ],
-    icon: Users,
+    focus: "Liderança do PMO e estruturação da governança de portfólios de TI.",
+    impacts: [{ metric: "+30%", description: "eficiência de alocação de recursos" }],
   },
   {
     company: "Via Varejo (Casas Bahia / Ponto Frio)",
     products: "E-commerce e Plataformas Digitais",
-    focus: "Condução da evolução da jornada de compra digital e integração de plataformas",
+    focus: "Condução da evolução da jornada de compra digital e integração de plataformas.",
     impacts: [
-      { metric: "+10%", description: "taxa de conversão do e-commerce (Redesenho do Checkout)" },
-      { metric: "+R$ 1,5M", description: "recuperação anual (Fluxo Carrinho Esquecido)" },
-      { metric: "RA1000", description: "selo conquistado com integração Reclame Aqui" }
+      { metric: "+10%", description: "conversão do e-commerce (checkout)" },
+      { metric: "+R$1,5M", description: "recuperação anual (carrinho esquecido)" },
+      { metric: "RA1000", description: "selo conquistado com integração Reclame Aqui" },
     ],
-    icon: TrendingUp,
   },
   {
     company: "DEV PARTNER (Cliente BMW)",
     products: "Plataforma Nacional de Recall",
-    focus: "Gestão focal do cliente BMW, liderando a plataforma nacional de gestão de recall e integrando concessionárias",
+    focus: "Gestão focal do cliente BMW, liderando a plataforma nacional de gestão de recall e integrando concessionárias.",
     impacts: [
       { metric: "-40%", description: "tempo médio de agendamento de recall" },
-      { metric: "Nacional", description: "gestão inteligente de boxes e agendas para concessionários" }
+      { metric: "Nacional", description: "gestão inteligente de boxes e agendas" },
     ],
-    icon: Building2,
   },
 ];
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-20 bg-muted/30">
+    <section id="experience" className="py-20 sm:py-28 bg-secondary/40">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto space-y-12">
-          {/* Section Title */}
-          <div className="text-center space-y-4">
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground">
-              Trajetória Profissional e Prova de Impacto
-            </h2>
-            <div className="w-20 h-1 bg-primary mx-auto rounded-full"></div>
-          </div>
+        <div className="max-w-5xl mx-auto space-y-16">
+          <SectionHeading
+            index="02"
+            eyebrow="Trajetória profissional"
+            title="Prova de impacto"
+          />
 
-          {/* Timeline */}
-          <div className="space-y-8">
-            {experiences.map((exp, index) => {
-              const Icon = exp.icon;
-              return (
-                <Card
-                  key={index}
-                  className="shadow-card hover:shadow-card-hover transition-smooth border-l-4 border-l-primary"
-                >
-                  <CardHeader>
-                    <div className="flex items-start gap-4">
-                      <div className="p-3 rounded-lg bg-primary/10">
-                        <Icon className="w-6 h-6 text-primary" />
-                      </div>
-                      <div className="flex-1 space-y-2">
-                        <CardTitle className="text-2xl">{exp.company}</CardTitle>
-                        <CardDescription className="text-base font-medium">
-                          {exp.products}
-                        </CardDescription>
-                        <p className="text-muted-foreground">{exp.focus}</p>
-                      </div>
+          <div className="relative">
+            <div className="absolute left-0 top-0 bottom-0 w-px bg-border hidden sm:block" />
+
+            {experiences.map((exp, index) => (
+              <div key={exp.company} className="relative sm:pl-10 pb-14 last:pb-0">
+                <div className="hidden sm:block absolute left-0 top-1.5 -translate-x-1/2 w-2.5 h-2.5 rounded-full bg-accent" />
+
+                <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-3">
+                  <span className="font-mono text-sm text-accent">{String(index + 1).padStart(2, "0")}</span>
+                  <h3 className="font-display text-2xl sm:text-3xl font-semibold text-foreground">
+                    {exp.company}
+                  </h3>
+                </div>
+                <p className="text-sm font-medium text-muted-foreground mb-2">{exp.products}</p>
+                <p className="max-w-2xl text-muted-foreground leading-relaxed mb-6">{exp.focus}</p>
+
+                <div className="flex flex-wrap gap-x-10 gap-y-4 border-t border-border pt-5">
+                  {exp.impacts.map((impact) => (
+                    <div key={impact.description} className="max-w-[220px]">
+                      <p className="font-display text-2xl sm:text-3xl font-semibold text-foreground tabular-nums">
+                        {impact.metric}
+                      </p>
+                      <p className="text-xs sm:text-sm text-muted-foreground leading-snug mt-1">
+                        {impact.description}
+                      </p>
                     </div>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="space-y-3">
-                      <h4 className="font-semibold text-foreground">Impacto & Resultados:</h4>
-                      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                        {exp.impacts.map((impact, idx) => (
-                          <div key={idx} className="space-y-1">
-                            <Badge variant="secondary" className="text-base px-3 py-1 font-bold">
-                              {impact.metric}
-                            </Badge>
-                            <p className="text-sm text-muted-foreground">{impact.description}</p>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              );
-            })}
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

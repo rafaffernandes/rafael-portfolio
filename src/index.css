@@ -2,103 +2,103 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
 All colors MUST be HSL.
+
+Direção "Editorial de dados": papel + tinta + um único acento âmbar.
+Bordas finas no lugar de sombra profunda; tipografia faz o trabalho de hierarquia.
 */
 
 @layer base {
   :root {
-    /* Neutral colors - Clean & Professional */
-    --background: 0 0% 100%; /* White #FFFFFF */
-    --foreground: 217 33% 17%; /* Dark Gray #2D3748 */
+    /* Papel — fundo quente, não branco puro */
+    --background: 42 33% 97%;
+    --foreground: 222 45% 10%; /* Tinta */
 
-    --card: 0 0% 100%;
-    --card-foreground: 217 33% 17%;
+    --card: 40 28% 95%;
+    --card-foreground: 222 45% 10%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 217 33% 17%;
+    --popover: 42 33% 97%;
+    --popover-foreground: 222 45% 10%;
 
-    /* Primary - Azul Anil (Indigo) for trust and logic */
-    --primary: 233 47% 25%; /* Deep Indigo #1E3A8A */
-    --primary-foreground: 0 0% 100%;
-    
-    /* Secondary - Light Gray for cards */
-    --secondary: 210 40% 96%; /* Light Gray #F4F7F9 */
-    --secondary-foreground: 217 33% 17%;
+    /* Primary = tinta (texto/CTAs de contraste) */
+    --primary: 222 45% 10%;
+    --primary-foreground: 42 33% 97%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
+    --secondary: 40 20% 91%;
+    --secondary-foreground: 222 45% 10%;
 
-    /* Accent/CTA - Bright Orange for action */
-    --accent: 24 95% 53%; /* Vibrant Orange #F97316 */
-    --accent-foreground: 0 0% 100%;
+    --muted: 40 18% 91%;
+    --muted-foreground: 220 12% 38%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 100%;
+    /* Accent — âmbar, usado com moderação */
+    --accent: 36 92% 50%;
+    --accent-foreground: 222 45% 10%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 233 47% 25%;
+    --destructive: 5 65% 45%;
+    --destructive-foreground: 42 33% 97%;
 
-    --radius: 0.75rem;
-    
-    /* Custom tokens - Professional gradient */
-    --gradient-hero: linear-gradient(135deg, hsl(233 47% 20%) 0%, hsl(233 47% 30%) 50%, hsl(230 45% 45%) 100%);
-    --shadow-card: 0 4px 20px -2px hsl(233 47% 25% / 0.08);
-    --shadow-card-hover: 0 12px 40px -4px hsl(233 47% 25% / 0.15);
+    --border: 40 15% 83%;
+    --input: 40 15% 83%;
+    --ring: 36 92% 50%;
+
+    --radius: 0.25rem;
+
+    --shadow-card: 0 1px 2px hsl(222 45% 10% / 0.05);
+    --shadow-card-hover: 0 2px 8px hsl(222 45% 10% / 0.08);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 217 33% 17%;
-    --sidebar-primary: 233 47% 25%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 210 40% 96%;
-    --sidebar-accent-foreground: 233 47% 25%;
-    --sidebar-border: 214 32% 91%;
-    --sidebar-ring: 233 47% 25%;
+    --sidebar-background: 42 33% 97%;
+    --sidebar-foreground: 222 45% 10%;
+    --sidebar-primary: 222 45% 10%;
+    --sidebar-primary-foreground: 42 33% 97%;
+    --sidebar-accent: 40 20% 91%;
+    --sidebar-accent-foreground: 222 45% 10%;
+    --sidebar-border: 40 15% 83%;
+    --sidebar-ring: 36 92% 50%;
   }
 
   .dark {
-    --background: 217 33% 10%;
-    --foreground: 210 40% 98%;
+    /* Tinta — fundo quase preto azulado, texto papel */
+    --background: 222 45% 7%;
+    --foreground: 42 28% 95%;
 
-    --card: 217 33% 12%;
-    --card-foreground: 210 40% 98%;
+    --card: 222 40% 10%;
+    --card-foreground: 42 28% 95%;
 
-    --popover: 217 33% 12%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 222 45% 7%;
+    --popover-foreground: 42 28% 95%;
 
-    --primary: 233 60% 60%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 42 28% 95%;
+    --primary-foreground: 222 45% 7%;
 
-    --secondary: 217 33% 17%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 222 30% 14%;
+    --secondary-foreground: 42 28% 95%;
 
-    --muted: 217 33% 17%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 222 30% 14%;
+    --muted-foreground: 220 12% 65%;
 
-    --accent: 24 95% 58%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 36 92% 55%;
+    --accent-foreground: 222 45% 7%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 5 60% 45%;
+    --destructive-foreground: 42 28% 95%;
 
-    --border: 217 33% 20%;
-    --input: 217 33% 20%;
-    --ring: 233 60% 60%;
-    
-    --gradient-hero: linear-gradient(135deg, hsl(233 47% 15%) 0%, hsl(233 47% 25%) 50%, hsl(230 45% 35%) 100%);
-    --shadow-card: 0 4px 20px -2px hsl(0 0% 0% / 0.3);
-    --shadow-card-hover: 0 12px 40px -4px hsl(0 0% 0% / 0.5);
-    
-    --sidebar-background: 217 33% 10%;
-    --sidebar-foreground: 210 40% 98%;
-    --sidebar-primary: 233 60% 60%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 217 33% 17%;
-    --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 217 33% 20%;
-    --sidebar-ring: 233 60% 60%;
+    --border: 222 25% 20%;
+    --input: 222 25% 20%;
+    --ring: 36 92% 55%;
+
+    --shadow-card: 0 1px 2px hsl(0 0% 0% / 0.3);
+    --shadow-card-hover: 0 4px 16px hsl(0 0% 0% / 0.4);
+
+    --sidebar-background: 222 45% 7%;
+    --sidebar-foreground: 42 28% 95%;
+    --sidebar-primary: 42 28% 95%;
+    --sidebar-primary-foreground: 222 45% 7%;
+    --sidebar-accent: 222 30% 14%;
+    --sidebar-accent-foreground: 42 28% 95%;
+    --sidebar-border: 222 25% 20%;
+    --sidebar-ring: 36 92% 55%;
   }
 }
 
@@ -108,29 +108,50 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
-  
+
   html {
     scroll-behavior: smooth;
+  }
+
+  ::selection {
+    background: hsl(var(--accent) / 0.35);
+    color: hsl(var(--foreground));
   }
 }
 
 @layer utilities {
-  .gradient-hero {
-    background: var(--gradient-hero);
-  }
-  
   .shadow-card {
     box-shadow: var(--shadow-card);
   }
-  
+
   .shadow-card-hover {
     box-shadow: var(--shadow-card-hover);
   }
-  
+
   .transition-smooth {
     transition: var(--transition-smooth);
+  }
+
+  /* Rótulo pequeno, tracked, mono — usado como "olho" editorial acima de títulos */
+  .eyebrow {
+    @apply font-mono text-xs uppercase tracking-[0.25em] text-accent;
+  }
+
+  /* Numeração de seção estilo revista (01 — 02 — 03) */
+  .section-index {
+    @apply font-mono text-sm text-muted-foreground/60 tabular-nums;
+  }
+
+  /* Textura de papel sutil, sem depender de gradiente colorido */
+  .bg-paper-grain {
+    background-image: radial-gradient(hsl(var(--foreground) / 0.05) 0.6px, transparent 0.6px);
+    background-size: 14px 14px;
+  }
+
+  .text-balance {
+    text-wrap: balance;
   }
 }

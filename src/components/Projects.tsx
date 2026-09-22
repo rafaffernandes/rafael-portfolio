@@ -1,7 +1,5 @@
-import { ExternalLink } from "lucide-react";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { ArrowUpRight } from "lucide-react";
+import SectionHeading from "@/components/SectionHeading";
 import projectFaturamento from "@/assets/project-faturamento.jpg";
 import projectCheckout from "@/assets/project-checkout.jpg";
 import projectRecall from "@/assets/project-recall.jpg";
@@ -16,7 +14,7 @@ const projects = [
     description: "Automação B2B que transformou a eficiência operacional, reduzindo drasticamente o tempo de processamento de cobranças.",
     image: projectFaturamento,
     tags: ["Automação com IA", "Integração de Sistemas", "B2B"],
-    impact: "-25% tempo de faturamento",
+    impact: "-25% tempo",
   },
   {
     title: "Redesenho do Checkout",
@@ -31,16 +29,16 @@ const projects = [
     company: "BMW",
     description: "Plataforma nacional de gestão inteligente de recall com integração de concessionárias e otimização de agendas.",
     image: projectRecall,
-    tags: ["Automotivo", "Integração de Sistemas", "Plataforma Nacional"],
-    impact: "-40% tempo de agendamento",
+    tags: ["Automotivo", "Integração de Sistemas", "Nacional"],
+    impact: "-40% tempo",
   },
   {
     title: "Recuperação de Receita",
     company: "Via Varejo",
     description: "Fluxo estratégico de carrinho esquecido que recuperou receita significativa através de automação inteligente.",
     image: projectCarrinho,
-    tags: ["E-commerce", "Automação", "Recuperação de Receita"],
-    impact: "+R$ 1.5M/ano",
+    tags: ["E-commerce", "Automação", "Receita"],
+    impact: "+R$1,5M/ano",
   },
   {
     title: "Gestor de Leads",
@@ -55,75 +53,60 @@ const projects = [
     company: "Urbia Parques",
     description: "Estruturação completa de governança de portfólio e PMO com aumento significativo na alocação de recursos.",
     image: projectPMO,
-    tags: ["Governança", "PMO", "Gestão de Portfólio"],
+    tags: ["Governança", "PMO", "Portfólio"],
     impact: "+30% eficiência",
   },
 ];
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 bg-muted/30">
+    <section id="projects" className="py-20 sm:py-28 bg-secondary/40">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto space-y-12">
-          {/* Section Title */}
-          <div className="text-center space-y-4">
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground">
-              Projetos em Destaque
-            </h2>
-            <div className="w-20 h-1 bg-primary mx-auto rounded-full"></div>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Portfólio de projetos que demonstram impacto mensurável em escala
-            </p>
-          </div>
+        <div className="max-w-6xl mx-auto space-y-16">
+          <SectionHeading
+            index="04"
+            eyebrow="Estudos de caso"
+            title="Projetos em destaque"
+            intro="Seis entregas que demonstram impacto mensurável em escala."
+          />
 
-          {/* Projects Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border border border-border">
             {projects.map((project, index) => (
-              <Card
-                key={index}
-                className="shadow-card hover:shadow-card-hover transition-smooth overflow-hidden group"
+              <button
+                key={project.title}
+                onClick={() => document.getElementById("experience")?.scrollIntoView({ behavior: "smooth" })}
+                className="group bg-background text-left flex flex-col"
               >
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-44 overflow-hidden">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-smooth"
+                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                   />
-                  <div className="absolute top-4 right-4">
-                    <Badge variant="secondary" className="font-bold">
-                      {project.impact}
-                    </Badge>
-                  </div>
+                  <span className="absolute top-0 left-0 bg-background font-mono text-xs px-2 py-1 text-muted-foreground">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
                 </div>
-                <CardHeader>
-                  <CardTitle className="text-xl">{project.title}</CardTitle>
-                  <CardDescription className="font-semibold text-primary">
+                <div className="p-6 flex-1 flex flex-col">
+                  <p className="font-display text-2xl font-semibold text-foreground tabular-nums mb-3">
+                    {project.impact}
+                  </p>
+                  <h3 className="font-display text-lg font-semibold text-foreground leading-tight">
+                    {project.title}
+                  </h3>
+                  <p className="text-xs font-mono uppercase tracking-[0.15em] text-accent mt-1 mb-3">
                     {project.company}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground mb-4">
+                  </p>
+                  <p className="text-sm text-muted-foreground leading-relaxed mb-4 flex-1">
                     {project.description}
                   </p>
-                  <div className="flex flex-wrap gap-2">
-                    {project.tags.map((tag, idx) => (
-                      <Badge key={idx} variant="outline" className="text-xs">
-                        {tag}
-                      </Badge>
-                    ))}
-                  </div>
-                </CardContent>
-                <CardFooter>
-                  <Button
-                    variant="ghost"
-                    className="w-full group/btn"
-                    onClick={() => document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' })}
-                  >
-                    Ver Estudo de Caso
-                    <ExternalLink className="ml-2 w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                  </Button>
-                </CardFooter>
-              </Card>
+                  <p className="text-xs text-muted-foreground/70 mb-4">{project.tags.join(" / ")}</p>
+                  <span className="inline-flex items-center gap-1 text-sm font-medium text-foreground border-b border-transparent group-hover:border-accent transition-smooth w-fit">
+                    Ver estudo de caso
+                    <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                  </span>
+                </div>
+              </button>
             ))}
           </div>
         </div>

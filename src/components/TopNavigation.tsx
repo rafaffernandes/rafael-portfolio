@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 
 const navItems = [
-  { id: "about", label: "Trajetória" },
-  { id: "experience", label: "Experiências" },
-  { id: "skills", label: "Habilidades" },
-  { id: "projects", label: "Projetos" },
-  { id: "contact", label: "Contatos" },
+  { id: "about", label: "Trajetória", index: "01" },
+  { id: "experience", label: "Experiências", index: "02" },
+  { id: "skills", label: "Habilidades", index: "03" },
+  { id: "projects", label: "Projetos", index: "04" },
+  { id: "contact", label: "Contato", index: "05" },
 ];
 
 const TopNavigation = () => {
@@ -14,7 +14,7 @@ const TopNavigation = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 40);
 
       const sections = navItems.map((item) => ({
         id: item.id,
@@ -38,40 +38,60 @@ const TopNavigation = () => {
   }, []);
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <nav
-      className={`fixed top-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${
         isScrolled
-          ? "bg-background/95 backdrop-blur-md shadow-card border-b border-border"
-          : "bg-transparent"
+          ? "bg-background/95 backdrop-blur-md border-border"
+          : "bg-transparent border-transparent"
       }`}
     >
-      <div className="flex items-center gap-1 px-2 sm:px-4 py-3">
-        {navItems.map((item) => {
-          const isActive = activeSection === item.id;
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+          <button
+            onClick={() => scrollToSection("home")}
+            className="font-display text-lg font-semibold tracking-tight text-foreground"
+          >
+            RF
+            <span className="hidden sm:inline text-muted-foreground font-sans text-sm font-normal ml-2 tracking-normal">
+              — Rafael Fernandes
+            </span>
+          </button>
 
-          return (
-            <button
-              key={item.id}
-              onClick={() => scrollToSection(item.id)}
-              className={`px-2 sm:px-3 py-2 rounded-lg text-xs sm:text-sm font-medium transition-smooth ${
-                isActive
-                  ? "bg-accent text-accent-foreground"
-                  : isScrolled
-                  ? "text-foreground hover:bg-secondary hover:text-foreground"
-                  : "text-primary-foreground/90 hover:text-primary-foreground hover:bg-primary-foreground/10"
-              }`}
-            >
-              {item.label}
-            </button>
-          );
-        })}
+          <div className="hidden md:flex items-center gap-1">
+            {navItems.map((item) => {
+              const isActive = activeSection === item.id;
+              return (
+                <button
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
+                  className={`group flex items-center gap-1.5 px-3 py-2 font-mono text-xs uppercase tracking-[0.15em] transition-smooth ${
+                    isActive ? "text-accent" : "text-muted-foreground hover:text-foreground"
+                  }`}
+                >
+                  <span className="text-[10px] opacity-60">{item.index}</span>
+                  <span
+                    className={`border-b ${
+                      isActive ? "border-accent" : "border-transparent group-hover:border-foreground/30"
+                    } pb-0.5`}
+                  >
+                    {item.label}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+
+          <button
+            onClick={() => scrollToSection("contact")}
+            className="md:hidden font-mono text-xs uppercase tracking-[0.15em] text-accent"
+          >
+            Contato
+          </button>
+        </div>
       </div>
     </nav>
   );

@@ -13,6 +13,14 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        display: ['"Fraunces"', "serif"],
+        sans: ['"IBM Plex Sans"', "system-ui", "sans-serif"],
+        mono: ['"IBM Plex Mono"', "ui-monospace", "monospace"],
+      },
+      letterSpacing: {
+        widest2: "0.25em",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
