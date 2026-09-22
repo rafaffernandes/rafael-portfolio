@@ -20,11 +20,10 @@ const About = () => {
             negócio, decidir com base em dado e priorizar com visão estratégica.
           </p>
           <p className="max-w-3xl text-lg sm:text-xl text-muted-foreground leading-relaxed -mt-8">
-            Gerencio o ciclo completo de produto como especialista: do Discovery com usuários reais
-            ao Delivery, passando por roadmap estratégico, integrações sistêmicas via APIs, automação
-            de fluxos operacionais e liderança de squads multidisciplinares. Tenho domínio em
-            estratégia de produto, ecossistemas de leads e AI Product Building com LLMs — hoje sou
-            especialista certificado pela Tera nessa frente, uma parte da minha atuação, não o todo.
+            Do Discovery com usuário real ao Delivery. No meio disso: roadmap, integração de sistema,
+            automação de processo, squad multidisciplinar. Estudo o mercado antes de construir —
+            foi assim que cheguei ao SDR Agent, por exemplo. Hoje sou especialista certificado pela
+            Tera em AI Product Building, mas essa é só uma das frentes que domino.
           </p>
 
           {/* Blocos de destaque — sem sombra, com traço fino */}
@@ -44,7 +43,7 @@ const About = () => {
               <ul className="space-y-3 pt-2 border-t border-border">
                 {[
                   <>Central de Faturamento (2025): <strong className="text-foreground font-semibold">-25%</strong> no tempo médio, com boleto e consórcio automatizados</>,
-                  <>4 montadoras conectadas em escala via Salesforce/Mulesoft — backend robusto, não automação por IA</>,
+                  <>6 montadoras conectadas em escala via Salesforce/Mulesoft — backend robusto, não automação por IA</>,
                   <>Plataforma de recall BMW: <strong className="text-foreground font-semibold">-40%</strong> no tempo médio de agendamento</>,
                   <>Gestão de leads com Kanban inteligente e priorização por dado — <strong className="text-foreground font-semibold">+15%</strong> de conversão</>,
                 ].map((item, idx) => (
@@ -70,7 +69,7 @@ const About = () => {
               </p>
               <ul className="space-y-3 pt-2 border-t border-border">
                 {[
-                  <>Criei o <strong className="text-foreground font-semibold">SDR Agent</strong> do zero — converte mais de <strong className="text-foreground font-semibold">28%</strong> dos leads sozinho</>,
+                  <>Identifiquei a oportunidade estudando o mercado, criei o <strong className="text-foreground font-semibold">SDR Agent</strong> do zero — hoje ele qualifica e converte mais de <strong className="text-foreground font-semibold">28%</strong> dos leads sem vendedor</>,
                   <>OCR responsável por <strong className="text-foreground font-semibold">30%</strong> da análise de documentos, com <strong className="text-foreground font-semibold">65%</strong> de aprovação automática</>,
                   <>Processo de avaliação de qualidade e alucinação de LLMs, com scoring automatizado em lote</>,
                   <>Guardrails e adequação LGPD definidos junto ao jurídico</>,

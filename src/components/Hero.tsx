@@ -4,8 +4,8 @@ import profilePhoto from "@/assets/rafael-photo.jpg";
 
 const stats = [
   { value: "7+", label: "anos em produtos digitais" },
-  { value: "4", label: "montadoras integradas em escala" },
-  { value: "-25%", label: "tempo de faturamento" },
+  { value: "6", label: "montadoras integradas em escala" },
+  { value: "+28%", label: "conversão de leads (SDR Agent)" },
   { value: "+R$1,5M", label: "receita recuperada / ano" },
 ];
 

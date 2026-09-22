@@ -21,12 +21,12 @@ const roles: Role[] = [
     period: "Out 2023 — Presente",
     duration: "~3 anos",
     summary:
-      "Lidero o Time de IA e o Time de Integrações com Montadoras na Mobiauto. Meu trabalho vai da estratégia — priorização, roadmap, decisão orientada a dado — até a execução: dos agentes de IA em produção às integrações que conectam a Mobiauto a Stellantis, BMW, Volkswagen e Renault.",
+      "Lidero o Time de IA e o Time de Integrações com Montadoras na Mobiauto. Penso a estratégia (priorização, roadmap, decisão orientada a dado) e também executo: dos agentes de IA em produção às integrações que conectam a Mobiauto a 6 montadoras, entre elas Stellantis, BMW, Volkswagen e Renault.",
     bulletGroups: [
       {
         title: "IA & Agentes",
         items: [
-          "Criei o SDR Agent do zero: qualifica leads sozinho, antes do vendedor entrar em cena, e converte mais de 28% deles hoje",
+          "Estudei o mercado, identifiquei a oportunidade e criei o SDR Agent do zero. Hoje ele qualifica e converte mais de 28% dos leads sem nenhum vendedor entrar em cena",
           "Implementei OCR para ler, entender e aprovar documentos sem etapa manual: já responde por 30% de toda a análise da Central de Faturamento, com 65% de taxa de aprovação automática",
           "Toco o portfólio de agentes do MobiGestor",
           "Montei o processo de avaliação de qualidade e alucinação das LLMs, com scoring automatizado em lote",
@@ -39,7 +39,7 @@ const roles: Role[] = [
       {
         title: "Integrações",
         items: [
-          "Conecto montadoras ao MobiGestor em escala via Salesforce/Mulesoft: Stellantis, BMW, Volkswagen (incl. Banco VW) e Renault",
+          "Conecto 6 montadoras ao MobiGestor em escala via Salesforce/Mulesoft, entre elas Stellantis, BMW, Volkswagen (incl. Banco VW) e Renault",
           "Portais integrados: Mercado Livre, OLX e EasyCar",
           "Implementei o CheckPrice do discovery ao delivery, com dois produtos: consulta veicular (Capivara) e consulta de recall — mapeando toda a integração de APIs",
           "Atuo na priorização dos produtos core da companhia para mover KPIs conforme a necessidade do negócio",
@@ -60,7 +60,7 @@ const roles: Role[] = [
     impacts: [
       { metric: "-25%", description: "tempo médio de faturamento (2025)" },
       { metric: "+15%", description: "conversão de leads" },
-      { metric: "4", description: "montadoras conectadas em escala" },
+      { metric: "6", description: "montadoras conectadas em escala" },
     ],
   },
   {
