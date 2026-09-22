@@ -124,9 +124,11 @@ const About = () => {
           </div>
 
           <div>
-            <Button variant="outline" size="lg" className="group">
-              <Download className="group-hover:translate-y-0.5 transition-transform" />
-              Download CV (PDF)
+            <Button variant="outline" size="lg" className="group" asChild>
+              <a href="/cv-rafael-fernandes.pdf" download="Rafael Fernandes - CV.pdf">
+                <Download className="group-hover:translate-y-0.5 transition-transform" />
+                Download CV (PDF)
+              </a>
             </Button>
           </div>
         </div>
