@@ -1,25 +1,100 @@
 import SectionHeading from "@/components/SectionHeading";
 
-const experiences = [
+type BulletGroup = { title: string; items: string[] };
+type Impact = { metric: string; description: string };
+
+interface Role {
+  title: string;
+  company: string;
+  period: string;
+  duration: string;
+  summary: string;
+  bulletGroups?: BulletGroup[];
+  bullets?: string[];
+  impacts?: Impact[];
+}
+
+const roles: Role[] = [
   {
-    company: "MIDIAUTO LTDA",
-    products: "Mobigestor e Primeira Mão",
-    focus: "Liderança da estratégia e roadmap para escalar a operação, automatizar processos (com IA) e integrar sistemas no setor automotivo.",
+    title: "Product Manager",
+    company: "Mobiauto",
+    period: "Out 2023 — Presente",
+    duration: "~3 anos",
+    summary:
+      "Lidero o Time de IA e o Time de Integrações com Montadoras. Do agente que qualifica leads sozinho à automação que conecta 4 montadoras em escala — sou eu que decido o que constrói e por quê.",
+    bulletGroups: [
+      {
+        title: "IA & Agentes",
+        items: [
+          "Criei o SDR Agent do zero: qualifica leads sozinho, antes do vendedor entrar em cena",
+          "Implementei OCR para ler, entender e aprovar documentos sem etapa manual",
+          "Montei o processo de avaliação de qualidade e alucinação das LLMs, com scoring automatizado em lote",
+          "Defini guardrails e adequação LGPD do SDR Agent junto com o jurídico",
+          "Liderei a migração de modelos de LLM para versões mais atuais, sem deixar o custo explodir",
+          "Levei o Studio 360 (IA de tratamento de fundo em fotos de veículos) da POC à especificação de produção",
+          "MobiInteligente: IA proprietária que atua como consultor para vendedores e lojistas",
+        ],
+      },
+      {
+        title: "Integrações & produto",
+        items: [
+          "Conecto montadoras ao MobiGestor em escala via Salesforce/Mulesoft: Stellantis, BMW, Volkswagen (incl. Banco VW) e Renault",
+          "Portais integrados: Mercado Livre, OLX e EasyCar",
+          "Implementei o CheckPrice do discovery ao delivery — consulta veicular e consulta de recall",
+          "Central de Faturamento: módulo criado do zero, automatizando boleto e consórcio",
+          "Redesenhei a gestão de leads com Kanban inteligente e qualificação automática",
+        ],
+      },
+    ],
     impacts: [
       { metric: "-25%", description: "tempo médio de faturamento" },
-      { metric: "+15%", description: "conversão de vendas em leads quentes" },
+      { metric: "+15%", description: "conversão de leads" },
+      { metric: "4", description: "montadoras conectadas em escala" },
     ],
   },
   {
+    title: "Senior Product Owner",
+    company: "Universidade Cruzeiro do Sul",
+    period: "Jan — Ago 2023",
+    duration: "8 meses",
+    summary:
+      "Liderança estratégica da Squad de LMS, gerenciando o ciclo de vida completo dos produtos de destaque da universidade — do backlog ao roadmap, com relatórios diretos à diretoria.",
+    bullets: [
+      "Priorização e gestão do backlog, otimizando a eficiência do fluxo de trabalho da squad",
+      "Colaboração com a área de negócios para alinhamento de roadmap e definição da visão do produto",
+      "Formulação de requisitos técnicos e funcionais para o desenvolvimento de épicos e features",
+      "Facilitação das cerimônias Scrum e apresentação de relatórios de progresso à diretoria",
+    ],
+  },
+  {
+    title: "Senior Project Manager",
     company: "Urbia Parques",
-    products: "PMO e Governança de TI",
-    focus: "Liderança do PMO e estruturação da governança de portfólios de TI.",
+    period: "Set 2022 — Jan 2023",
+    duration: "5 meses",
+    summary:
+      "Estruturei a governança de portfólio de TI da companhia — de comitês executivos a rituais de priorização — equilibrando execução tática com visão estratégica.",
+    bullets: [
+      "Estruturei portfólios e programas de TI priorizados com WSJF, Matriz Impacto × Esforço e Business Value Score",
+      "Conduzi comitês executivos, reportando status, riscos e dependências para apoiar decisões",
+      "Implantei e acompanhei OKRs, KPIs e SLAs com dashboards executivos para diretoria",
+      "Liderei squads multidisciplinares e mentorei líderes de projeto, elevando a maturidade ágil",
+    ],
     impacts: [{ metric: "+30%", description: "eficiência de alocação de recursos" }],
   },
   {
-    company: "Via Varejo (Casas Bahia / Ponto Frio)",
-    products: "E-commerce e Plataformas Digitais",
-    focus: "Condução da evolução da jornada de compra digital e integração de plataformas.",
+    title: "Product Owner",
+    company: "Via (Via Varejo — Casas Bahia / Ponto Frio)",
+    period: "Mai 2019 — Ago 2022",
+    duration: "3 anos e 4 meses",
+    summary:
+      "Liderança de produtos digitais em um dos maiores players de varejo do Brasil, orientada por dados, OKRs e experimentação contínua.",
+    bullets: [
+      "Redesenho completo da página de Checkout, com aumento direto de retenção e conversão digital",
+      "Fluxo de Carrinho Esquecido com cupons personalizados: recuperação de receita e reengajamento",
+      "Validação de hipóteses via testes A/B, acompanhando NPS, conversão, funil digital e churn em tempo real",
+      "Integração com Reclame Aqui e conquista do selo RA 1000",
+      "Integração multicanal com visão 360º do cliente e dashboards executivos",
+    ],
     impacts: [
       { metric: "+10%", description: "conversão do e-commerce (checkout)" },
       { metric: "+R$1,5M", description: "recuperação anual (carrinho esquecido)" },
@@ -27,55 +102,100 @@ const experiences = [
     ],
   },
   {
-    company: "DEV PARTNER (Cliente BMW)",
-    products: "Plataforma Nacional de Recall",
-    focus: "Gestão focal do cliente BMW, liderando a plataforma nacional de gestão de recall e integrando concessionárias.",
-    impacts: [
-      { metric: "-40%", description: "tempo médio de agendamento de recall" },
-      { metric: "Nacional", description: "gestão inteligente de boxes e agendas" },
+    title: "Analista de Negócios → Product Owner",
+    company: "DevPartner (Cliente BMW)",
+    period: "Fev 2018 — Abr 2019",
+    duration: "1 ano e 3 meses",
+    summary:
+      "Meu primeiro papel de produto: gestor focal do cliente BMW, na interface entre negócio, tecnologia e governança — combinando Product Owner com práticas de PMO.",
+    bullets: [
+      "Refinamento de requisitos funcionais e técnicos, backlog estruturado com critérios de aceite",
+      "Defini visão e roadmap da Plataforma Nacional de Recall, conectando clientes, concessionárias e mecânicos",
+      "Acompanhamento de métricas de agendamento, capacidade e cumprimento de prazos legais",
+      "Relatórios executivos e comitês de direção com a BMW",
     ],
+    impacts: [{ metric: "-40%", description: "tempo médio de agendamento de recall" }],
   },
 ];
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-20 sm:py-28 bg-secondary/40">
+    <section id="experience" className="py-24 sm:py-32 bg-secondary/40">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto space-y-16">
+        <div className="max-w-7xl mx-auto space-y-20">
           <SectionHeading
             index="02"
-            eyebrow="Trajetória profissional"
-            title="Prova de impacto"
+            eyebrow="Trajetória profissional — 7+ anos"
+            title="De analista de negócios a Product Manager de IA"
+            intro="Cinco papéis, uma linha: cada posição ampliou o escopo — de requisito e backlog a estratégia de produto, governança de portfólio e, hoje, liderança de times de IA."
           />
 
           <div className="relative">
             <div className="absolute left-0 top-0 bottom-0 w-px bg-border hidden sm:block" />
 
-            {experiences.map((exp, index) => (
-              <div key={exp.company} className="relative sm:pl-10 pb-14 last:pb-0">
-                <div className="hidden sm:block absolute left-0 top-1.5 -translate-x-1/2 w-2.5 h-2.5 rounded-full bg-accent" />
+            {roles.map((role, index) => (
+              <div key={role.company + role.period} className="relative sm:pl-12 pb-20 last:pb-0">
+                <div className="hidden sm:block absolute left-0 top-2 -translate-x-1/2 w-3 h-3 rounded-full bg-accent" />
 
-                <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-3">
-                  <span className="font-mono text-sm text-accent">{String(index + 1).padStart(2, "0")}</span>
-                  <h3 className="font-display text-2xl sm:text-3xl font-semibold text-foreground">
-                    {exp.company}
+                <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1 mb-2">
+                  <span className="font-mono text-base text-accent">{String(index + 1).padStart(2, "0")}</span>
+                  <h3 className="font-display text-3xl sm:text-4xl font-bold text-foreground leading-tight">
+                    {role.title}
                   </h3>
                 </div>
-                <p className="text-sm font-medium text-muted-foreground mb-2">{exp.products}</p>
-                <p className="max-w-2xl text-muted-foreground leading-relaxed mb-6">{exp.focus}</p>
-
-                <div className="flex flex-wrap gap-x-10 gap-y-4 border-t border-border pt-5">
-                  {exp.impacts.map((impact) => (
-                    <div key={impact.description} className="max-w-[220px]">
-                      <p className="font-display text-2xl sm:text-3xl font-semibold text-foreground tabular-nums">
-                        {impact.metric}
-                      </p>
-                      <p className="text-xs sm:text-sm text-muted-foreground leading-snug mt-1">
-                        {impact.description}
-                      </p>
-                    </div>
-                  ))}
+                <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mb-5 text-base">
+                  <span className="font-semibold text-foreground/80">{role.company}</span>
+                  <span className="text-muted-foreground/50">·</span>
+                  <span className="font-mono text-sm text-muted-foreground">
+                    {role.period} <span className="text-muted-foreground/60">({role.duration})</span>
+                  </span>
                 </div>
+
+                <p className="max-w-3xl text-lg text-muted-foreground leading-relaxed mb-8">{role.summary}</p>
+
+                {role.bulletGroups ? (
+                  <div className="grid md:grid-cols-2 gap-x-10 gap-y-8 mb-8">
+                    {role.bulletGroups.map((group) => (
+                      <div key={group.title}>
+                        <h4 className="font-mono text-xs uppercase tracking-[0.2em] text-foreground mb-3">
+                          {group.title}
+                        </h4>
+                        <ul className="space-y-2.5">
+                          {group.items.map((item) => (
+                            <li key={item} className="text-[15px] text-muted-foreground leading-relaxed flex gap-2.5">
+                              <span className="text-accent shrink-0">▸</span>
+                              <span>{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  role.bullets && (
+                    <ul className="max-w-3xl space-y-2.5 mb-8">
+                      {role.bullets.map((item) => (
+                        <li key={item} className="text-[15px] text-muted-foreground leading-relaxed flex gap-2.5">
+                          <span className="text-accent shrink-0">▸</span>
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )
+                )}
+
+                {role.impacts && (
+                  <div className="flex flex-wrap gap-x-12 gap-y-5 border-t border-border pt-6">
+                    {role.impacts.map((impact) => (
+                      <div key={impact.description} className="max-w-[240px]">
+                        <p className="font-display text-3xl sm:text-4xl font-bold text-foreground tabular-nums">
+                          {impact.metric}
+                        </p>
+                        <p className="text-sm text-muted-foreground leading-snug mt-1">{impact.description}</p>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             ))}
           </div>

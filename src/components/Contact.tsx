@@ -14,21 +14,21 @@ const contactLinks = [
   },
   {
     title: "LinkedIn",
-    value: "rafael-fernandes-49aa9095",
-    href: "https://www.linkedin.com/in/rafael-fernandes-49aa9095/",
+    value: "rafaelfernandes-pm",
+    href: "https://www.linkedin.com/in/rafaelfernandes-pm",
   },
 ];
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 sm:py-28 bg-background">
+    <section id="contact" className="py-24 sm:py-32 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-5xl mx-auto space-y-16">
+        <div className="max-w-5xl mx-auto space-y-20">
           <SectionHeading
             index="05"
             eyebrow="Contato"
             title="Vamos trabalhar juntos?"
-            intro="Aberto a conversas sobre oportunidades, desafios de produto e novos projetos."
+            intro="Aberto a conversas sobre oportunidades, desafios de produto de IA e novos projetos."
           />
 
           <div className="border-t border-border">
@@ -38,17 +38,17 @@ const Contact = () => {
                 href={contact.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center justify-between gap-4 py-6 border-b border-border transition-smooth hover:pl-3"
+                className="group flex items-center justify-between gap-4 py-8 border-b border-border transition-smooth hover:pl-3"
               >
                 <div>
-                  <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground mb-1">
+                  <p className="font-mono text-sm uppercase tracking-[0.2em] text-muted-foreground mb-2">
                     {contact.title}
                   </p>
-                  <p className="font-display text-2xl sm:text-3xl font-semibold text-foreground group-hover:text-accent transition-smooth">
+                  <p className="font-display text-3xl sm:text-4xl font-bold text-foreground group-hover:text-accent transition-smooth">
                     {contact.value}
                   </p>
                 </div>
-                <ArrowUpRight className="w-6 h-6 text-muted-foreground shrink-0 group-hover:text-accent group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
+                <ArrowUpRight className="w-7 h-7 text-muted-foreground shrink-0 group-hover:text-accent group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
               </a>
             ))}
           </div>

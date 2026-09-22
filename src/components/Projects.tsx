@@ -10,7 +10,7 @@ import projectPMO from "@/assets/project-pmo.jpg";
 const projects = [
   {
     title: "Central de Faturamento",
-    company: "MIDIAUTO",
+    company: "Mobiauto",
     description: "Automação B2B que transformou a eficiência operacional, reduzindo drasticamente o tempo de processamento de cobranças.",
     image: projectFaturamento,
     tags: ["Automação com IA", "Integração de Sistemas", "B2B"],
@@ -41,11 +41,11 @@ const projects = [
     impact: "+R$1,5M/ano",
   },
   {
-    title: "Gestor de Leads",
-    company: "MIDIAUTO",
-    description: "Sistema de qualificação e distribuição inteligente de leads quentes que maximizou a eficiência comercial.",
+    title: "SDR Agent — Qualificação de Leads",
+    company: "Mobiauto",
+    description: "Agente de IA criado do zero que qualifica leads sozinho, antes do vendedor entrar em cena — com guardrails e adequação LGPD.",
     image: projectLeads,
-    tags: ["Automação", "CRM", "Otimização"],
+    tags: ["IA & Agentes", "LLM", "CRM"],
     impact: "+15% conversão",
   },
   {
@@ -60,14 +60,14 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 sm:py-28 bg-secondary/40">
+    <section id="projects" className="py-24 sm:py-32 bg-secondary/40">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto space-y-16">
+        <div className="max-w-7xl mx-auto space-y-20">
           <SectionHeading
             index="04"
             eyebrow="Estudos de caso"
             title="Projetos em destaque"
-            intro="Seis entregas que demonstram impacto mensurável em escala."
+            intro="Seis entregas que demonstram impacto mensurável em escala — do agente de IA que qualifica leads sozinho à plataforma nacional de recall."
           />
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border border border-border">
@@ -87,17 +87,17 @@ const Projects = () => {
                     {String(index + 1).padStart(2, "0")}
                   </span>
                 </div>
-                <div className="p-6 flex-1 flex flex-col">
-                  <p className="font-display text-2xl font-semibold text-foreground tabular-nums mb-3">
+                <div className="p-7 flex-1 flex flex-col">
+                  <p className="font-display text-3xl font-bold text-foreground tabular-nums mb-3">
                     {project.impact}
                   </p>
-                  <h3 className="font-display text-lg font-semibold text-foreground leading-tight">
+                  <h3 className="font-display text-xl font-bold text-foreground leading-tight">
                     {project.title}
                   </h3>
-                  <p className="text-xs font-mono uppercase tracking-[0.15em] text-accent mt-1 mb-3">
+                  <p className="text-xs font-mono uppercase tracking-[0.15em] text-accent mt-1.5 mb-3">
                     {project.company}
                   </p>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-4 flex-1">
+                  <p className="text-[15px] text-muted-foreground leading-relaxed mb-4 flex-1">
                     {project.description}
                   </p>
                   <p className="text-xs text-muted-foreground/70 mb-4">{project.tags.join(" / ")}</p>

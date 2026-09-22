@@ -3,10 +3,10 @@ import { Button } from "@/components/ui/button";
 import profilePhoto from "@/assets/rafael-photo.jpg";
 
 const stats = [
-  { value: "6+", label: "anos como PM" },
+  { value: "7+", label: "anos em produtos digitais" },
+  { value: "4", label: "montadoras integradas via IA" },
   { value: "-25%", label: "tempo de faturamento" },
   { value: "+R$1,5M", label: "receita recuperada / ano" },
-  { value: "-40%", label: "tempo de agendamento" },
 ];
 
 const Hero = () => {
@@ -15,25 +15,25 @@ const Hero = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-36 pb-16 sm:pt-44 sm:pb-24">
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-6 items-start">
           {/* Coluna de texto */}
-          <div className="lg:col-span-8 space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
-            <span className="eyebrow">Product Manager Sênior — Automotivo &amp; Varejo</span>
+          <div className="lg:col-span-8 space-y-10 animate-in fade-in slide-in-from-bottom-4 duration-700">
+            <span className="eyebrow text-sm">Product Manager Sênior — IA, Agentes &amp; Integrações</span>
 
-            <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight leading-[0.98] text-balance">
+            <h1 className="font-display text-7xl sm:text-8xl lg:text-9xl font-bold tracking-tight leading-[0.92] text-balance">
               Rafael
               <br />
               Fernandes
             </h1>
 
-            <p className="max-w-xl text-lg sm:text-xl leading-relaxed text-muted-foreground">
-              Transformo dores de stakeholders em crescimento previsível para produtos SaaS do setor
-              Automotivo e Marketplaces de Varejo — escalando negócios com automação de IA e
-              integração de sistemas.
+            <p className="max-w-2xl text-xl sm:text-2xl leading-relaxed text-muted-foreground">
+              Lidero produtos de IA no setor automotivo — do agente que qualifica leads sozinho à
+              integração de montadoras em escala. +7 anos traduzindo dor de negócio em produtos que
+              geram valor mensurável, no Automotivo e no Varejo.
             </p>
 
-            <div className="flex flex-wrap items-center gap-4 pt-2">
+            <div className="flex flex-wrap items-center gap-6 pt-2">
               <Button
                 variant="hero"
-                size="lg"
+                size="xl"
                 onClick={() => window.open("https://wa.me/5511952508498", "_blank")}
                 className="group"
               >
@@ -42,7 +42,7 @@ const Hero = () => {
               </Button>
               <button
                 onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
-                className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground hover:text-foreground transition-smooth border-b border-transparent hover:border-foreground/30 pb-1"
+                className="font-mono text-sm uppercase tracking-[0.2em] text-muted-foreground hover:text-foreground transition-smooth border-b border-transparent hover:border-foreground/30 pb-1"
               >
                 Ver trajetória
               </button>
@@ -63,13 +63,13 @@ const Hero = () => {
         </div>
 
         {/* Faixa de números — estilo "by the numbers" editorial */}
-        <div className="mt-16 sm:mt-20 grid grid-cols-2 sm:grid-cols-4 border-t border-border">
+        <div className="mt-20 sm:mt-28 grid grid-cols-2 sm:grid-cols-4 border-t border-border">
           {stats.map((stat) => (
-            <div key={stat.label} className="border-r border-border last:border-r-0 py-6 pr-4">
-              <p className="font-display text-3xl sm:text-4xl font-semibold text-foreground tabular-nums">
+            <div key={stat.label} className="border-r border-border last:border-r-0 py-8 pr-4">
+              <p className="font-display text-4xl sm:text-5xl font-bold text-foreground tabular-nums">
                 {stat.value}
               </p>
-              <p className="mt-1 text-xs sm:text-sm text-muted-foreground leading-snug">{stat.label}</p>
+              <p className="mt-2 text-sm sm:text-base text-muted-foreground leading-snug">{stat.label}</p>
             </div>
           ))}
         </div>
