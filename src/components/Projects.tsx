@@ -6,6 +6,8 @@ import projectRecall from "@/assets/project-recall.jpg";
 import projectCarrinho from "@/assets/project-carrinho.jpg";
 import projectLeads from "@/assets/project-leads.jpg";
 import projectPMO from "@/assets/project-pmo.jpg";
+import projectStudio360 from "@/assets/project-studio360.jpg";
+import projectCheckPrice from "@/assets/project-checkprice.jpg";
 
 const projects = [
   {
@@ -46,7 +48,7 @@ const projects = [
     description: "Agente de IA criado do zero que qualifica lead sozinho, antes do vendedor entrar em cena. Guardrails e adequação LGPD definidos junto ao jurídico.",
     image: projectLeads,
     tags: ["IA & Agentes", "LLM", "CRM"],
-    impact: "+15% conversão",
+    impact: "+28% conversão",
   },
   {
     title: "Governança de Portfólio de TI",
@@ -55,6 +57,22 @@ const projects = [
     image: projectPMO,
     tags: ["Governança", "PMO", "WSJF"],
     impact: "+30% eficiência",
+  },
+  {
+    title: "CheckPrice (Capivara)",
+    company: "Mobiauto",
+    description: "Consulta veicular e consulta de recall num produto só, do discovery ao delivery. Mapeei toda a integração de API por trás das duas consultas.",
+    image: projectCheckPrice,
+    tags: ["Automotivo", "API", "Discovery"],
+    impact: "2 produtos",
+  },
+  {
+    title: "Studio 360",
+    company: "Mobiauto",
+    description: "IA de tratamento de fundo em fotos de veículo. Levei da POC à especificação de produção — o que era teste virou parte do fluxo do vendedor.",
+    image: projectStudio360,
+    tags: ["IA & Agentes", "Computer Vision", "POC → Produção"],
+    impact: "POC → produção",
   },
 ];
 
@@ -67,7 +85,7 @@ const Projects = () => {
             index="04"
             eyebrow="Estudos de caso"
             title="Projetos em destaque"
-            intro="Seis entregas, seis contextos diferentes. Cada uma resolveu um problema real, com número pra provar."
+            intro="Oito entregas, contextos bem diferentes entre si. Cada uma resolveu um problema real, com número pra provar."
           />
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border border border-border">

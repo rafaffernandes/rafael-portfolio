@@ -4,7 +4,7 @@ import profilePhoto from "@/assets/rafael-photo.jpg";
 
 const stats = [
   { value: "7+", label: "anos em produtos digitais" },
-  { value: "4", label: "montadoras integradas via IA" },
+  { value: "4", label: "montadoras integradas em escala" },
   { value: "-25%", label: "tempo de faturamento" },
   { value: "+R$1,5M", label: "receita recuperada / ano" },
 ];
@@ -16,7 +16,7 @@ const Hero = () => {
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-6 items-start">
           {/* Coluna de texto */}
           <div className="lg:col-span-8 space-y-10 animate-in fade-in slide-in-from-bottom-4 duration-700">
-            <span className="eyebrow text-sm">Product Manager Sênior | IA, Agentes &amp; Integrações</span>
+            <span className="eyebrow text-sm">Product Manager Sênior | Estratégia de Produto</span>
 
             <h1 className="font-display text-7xl sm:text-8xl lg:text-9xl font-bold tracking-tight leading-[0.92] text-balance">
               Rafael
@@ -25,9 +25,9 @@ const Hero = () => {
             </h1>
 
             <p className="max-w-2xl text-xl sm:text-2xl leading-relaxed text-muted-foreground">
-              Lidero produtos de IA no setor automotivo: criei o agente que qualifica leads sozinho
-              e conectei 4 montadoras em escala. +7 anos traduzindo dor de negócio em produto, no
-              Automotivo e no Varejo.
+              Product Manager com +7 anos de experiência em produtos digitais de grande escala nos
+              setores automotivo, varejo e entretenimento. Decisão orientada a dado, priorização com
+              visão de negócio, ciclo completo de produto — do discovery ao delivery.
             </p>
 
             <div className="flex flex-wrap items-center gap-6 pt-2">

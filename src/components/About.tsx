@@ -15,37 +15,38 @@ const About = () => {
 
           {/* Texto principal — coluna de leitura, não centralizado */}
           <p className="max-w-4xl font-display text-3xl sm:text-4xl leading-snug text-foreground/90 text-balance font-medium">
-            Product Manager com +7 anos de experiência em produtos digitais nos setores automotivo,
-            varejo e entretenimento. Minha especialidade é simples: entender a dor do negócio e
-            transformar isso em entrega.
+            Product Manager com +7 anos de experiência em produtos digitais de grande escala nos
+            setores automotivo, varejo e entretenimento. Minha especialidade é entender a dor do
+            negócio, decidir com base em dado e priorizar com visão estratégica.
           </p>
           <p className="max-w-3xl text-lg sm:text-xl text-muted-foreground leading-relaxed -mt-8">
-            Conduzo o ciclo completo de produto: discovery com usuário real, roadmap, integração de
-            sistemas via API, automação de processo, liderança de squad. Sou especialista certificado
-            pela Tera em AI Product Building — hoje é a minha principal frente, projetando e escalando
-            produtos que resolvem um problema real de negócio.
+            Gerencio o ciclo completo de produto como especialista: do Discovery com usuários reais
+            ao Delivery, passando por roadmap estratégico, integrações sistêmicas via APIs, automação
+            de fluxos operacionais e liderança de squads multidisciplinares. Tenho domínio em
+            estratégia de produto, ecossistemas de leads e AI Product Building com LLMs — hoje sou
+            especialista certificado pela Tera nessa frente, uma parte da minha atuação, não o todo.
           </p>
 
           {/* Blocos de destaque — sem sombra, com traço fino */}
           <div className="grid lg:grid-cols-3 gap-px bg-border border border-border">
             <div className="bg-background p-8 sm:p-10 space-y-5">
               <div className="flex items-center gap-3 text-accent">
-                <Sparkles className="w-5 h-5" />
-                <span className="eyebrow">Especialidade atual</span>
+                <Target className="w-5 h-5" />
+                <span className="eyebrow">Superpoder</span>
               </div>
               <p className="font-display text-2xl font-bold text-foreground">
-                AI Product Management
+                Estratégia de produto orientada a dado
               </p>
               <p className="text-muted-foreground leading-relaxed text-[15px]">
-                Lidero o Time de IA da Mobiauto: projeto e escalo agentes que resolvem problemas
-                reais de negócio.
+                Traduzo dor de negócio em decisão de roadmap, priorização e execução — sempre
+                apoiado em dado, não em opinião.
               </p>
               <ul className="space-y-3 pt-2 border-t border-border">
                 {[
-                  <>Criei o <strong className="text-foreground font-semibold">SDR Agent</strong> do zero — qualifica leads sozinho, antes do vendedor</>,
-                  <>Processo de avaliação de qualidade e alucinação de LLMs, com scoring automatizado em lote</>,
-                  <>Guardrails e adequação LGPD definidos junto ao jurídico</>,
-                  <>OCR para leitura e aprovação de documentos sem etapa manual</>,
+                  <>Central de Faturamento (2025): <strong className="text-foreground font-semibold">-25%</strong> no tempo médio, com boleto e consórcio automatizados</>,
+                  <>4 montadoras conectadas em escala via Salesforce/Mulesoft — backend robusto, não automação por IA</>,
+                  <>Plataforma de recall BMW: <strong className="text-foreground font-semibold">-40%</strong> no tempo médio de agendamento</>,
+                  <>Gestão de leads com Kanban inteligente e priorização por dado — <strong className="text-foreground font-semibold">+15%</strong> de conversão</>,
                 ].map((item, idx) => (
                   <li key={idx} className="flex gap-3 text-sm text-muted-foreground leading-relaxed">
                     <span className="font-mono text-accent shrink-0">0{idx + 1}</span>
@@ -57,22 +58,22 @@ const About = () => {
 
             <div className="bg-background p-8 sm:p-10 space-y-5">
               <div className="flex items-center gap-3 text-accent">
-                <Target className="w-5 h-5" />
-                <span className="eyebrow">Superpoder</span>
+                <Sparkles className="w-5 h-5" />
+                <span className="eyebrow">Aplicação atual</span>
               </div>
               <p className="font-display text-2xl font-bold text-foreground">
-                Otimização de processos e eficiência operacional
+                Produtos de IA na Mobiauto
               </p>
               <p className="text-muted-foreground leading-relaxed text-[15px]">
-                Traduzo visão de negócio em produto que automatiza operação complexa. O ganho
-                aparece em tempo e receita, como nos exemplos abaixo.
+                Lidero o Time de IA e o Time de Integrações com Montadoras — aplicando a mesma
+                leitura estratégica em contexto de automação inteligente.
               </p>
               <ul className="space-y-3 pt-2 border-t border-border">
                 {[
-                  <>Central de Faturamento que reduziu o tempo médio em <strong className="text-foreground font-semibold">25%</strong> com automação</>,
-                  <>4 montadoras conectadas em escala via Salesforce/Mulesoft</>,
-                  <>Plataforma de recall BMW que reduziu o tempo de agendamento em <strong className="text-foreground font-semibold">40%</strong></>,
-                  <>Gestão de leads com Kanban inteligente — <strong className="text-foreground font-semibold">+15%</strong> de conversão</>,
+                  <>Criei o <strong className="text-foreground font-semibold">SDR Agent</strong> do zero — converte mais de <strong className="text-foreground font-semibold">28%</strong> dos leads sozinho</>,
+                  <>OCR responsável por <strong className="text-foreground font-semibold">30%</strong> da análise de documentos, com <strong className="text-foreground font-semibold">65%</strong> de aprovação automática</>,
+                  <>Processo de avaliação de qualidade e alucinação de LLMs, com scoring automatizado em lote</>,
+                  <>Guardrails e adequação LGPD definidos junto ao jurídico</>,
                 ].map((item, idx) => (
                   <li key={idx} className="flex gap-3 text-sm text-muted-foreground leading-relaxed">
                     <span className="font-mono text-accent shrink-0">0{idx + 1}</span>

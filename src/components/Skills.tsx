@@ -2,15 +2,6 @@ import SectionHeading from "@/components/SectionHeading";
 
 const skillCategories = [
   {
-    title: "AI Product Management",
-    skills: [
-      "AI Agents & Prompt Engineering",
-      "LLM Evals & Guardrails",
-      "API Integration (Salesforce / Mulesoft)",
-      "LGPD e Compliance de IA",
-    ],
-  },
-  {
     title: "Gestão de Produto",
     skills: [
       "Product Discovery & Delivery",
@@ -26,6 +17,15 @@ const skillCategories = [
   {
     title: "Liderança & Governança",
     skills: ["OKRs e KPIs", "Liderança de Squads Ágeis", "Gestão de Portfólio & PMO", "Reports Executivos"],
+  },
+  {
+    title: "AI Product Management",
+    skills: [
+      "AI Agents & Prompt Engineering",
+      "LLM Evals & Guardrails",
+      "API Integration (Salesforce / Mulesoft)",
+      "LGPD e Compliance de IA",
+    ],
   },
 ];
 

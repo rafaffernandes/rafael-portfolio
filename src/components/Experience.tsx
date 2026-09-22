@@ -21,13 +21,14 @@ const roles: Role[] = [
     period: "Out 2023 — Presente",
     duration: "~3 anos",
     summary:
-      "Lidero o Time de IA e o Time de Integrações com Montadoras na Mobiauto. Decido o que construímos em IA e por quê — do SDR Agent que qualifica leads sozinho às integrações que conectam 4 montadoras.",
+      "Lidero o Time de IA e o Time de Integrações com Montadoras na Mobiauto. Meu trabalho vai da estratégia — priorização, roadmap, decisão orientada a dado — até a execução: dos agentes de IA em produção às integrações que conectam a Mobiauto a Stellantis, BMW, Volkswagen e Renault.",
     bulletGroups: [
       {
         title: "IA & Agentes",
         items: [
-          "Criei o SDR Agent do zero: qualifica leads sozinho, antes do vendedor entrar em cena",
-          "Implementei OCR para ler, entender e aprovar documentos sem etapa manual",
+          "Criei o SDR Agent do zero: qualifica leads sozinho, antes do vendedor entrar em cena, e converte mais de 28% deles hoje",
+          "Implementei OCR para ler, entender e aprovar documentos sem etapa manual: já responde por 30% de toda a análise da Central de Faturamento, com 65% de taxa de aprovação automática",
+          "Toco o portfólio de agentes do MobiGestor",
           "Montei o processo de avaliação de qualidade e alucinação das LLMs, com scoring automatizado em lote",
           "Defini guardrails e adequação LGPD do SDR Agent junto com o jurídico",
           "Liderei a migração de modelos de LLM para versões mais atuais, sem deixar o custo explodir",
@@ -36,18 +37,28 @@ const roles: Role[] = [
         ],
       },
       {
-        title: "Integrações & produto",
+        title: "Integrações",
         items: [
           "Conecto montadoras ao MobiGestor em escala via Salesforce/Mulesoft: Stellantis, BMW, Volkswagen (incl. Banco VW) e Renault",
           "Portais integrados: Mercado Livre, OLX e EasyCar",
-          "Implementei o CheckPrice do discovery ao delivery — consulta veicular e consulta de recall",
+          "Implementei o CheckPrice do discovery ao delivery, com dois produtos: consulta veicular (Capivara) e consulta de recall — mapeando toda a integração de APIs",
+          "Atuo na priorização dos produtos core da companhia para mover KPIs conforme a necessidade do negócio",
+        ],
+      },
+      {
+        title: "MobiGestor & Primeira Mão (2023–2025)",
+        items: [
+          "Conduzi o Primeira Mão do discovery ao delivery: hipóteses validadas, escrita de US, definição de produto, priorização de backlog e roadmap",
           "Central de Faturamento: módulo criado do zero, automatizando boleto e consórcio",
           "Redesenhei a gestão de leads com Kanban inteligente e qualificação automática",
+          "Check-in de Visitas com QR Code e geolocalização: valida presença contra fraude e credita o vendedor certo",
+          "Integrei Quiver, Fandi e Auto Avaliar via API — vendedor trabalha numa tela só",
+          "Lancei o Módulo de Entrega de Veículos: rastreabilidade e conformidade no pós-venda",
         ],
       },
     ],
     impacts: [
-      { metric: "-25%", description: "tempo médio de faturamento" },
+      { metric: "-25%", description: "tempo médio de faturamento (2025)" },
       { metric: "+15%", description: "conversão de leads" },
       { metric: "4", description: "montadoras conectadas em escala" },
     ],
@@ -154,7 +165,7 @@ const Experience = () => {
                 <p className="max-w-3xl text-lg text-muted-foreground leading-relaxed mb-8">{role.summary}</p>
 
                 {role.bulletGroups ? (
-                  <div className="grid md:grid-cols-2 gap-x-10 gap-y-8 mb-8">
+                  <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-x-10 gap-y-8 mb-8">
                     {role.bulletGroups.map((group) => (
                       <div key={group.title}>
                         <h4 className="font-mono text-xs uppercase tracking-[0.2em] text-foreground mb-3">
