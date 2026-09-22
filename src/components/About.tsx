@@ -93,8 +93,8 @@ const About = () => {
                 Automotivo, Varejo e Educação
               </p>
               <p className="text-muted-foreground leading-relaxed text-[15px]">
-                Experiência profunda em três verticais, sempre entrando quando o negócio precisa
-                traduzir escala em produto.
+                Experiência profunda em Automotivo, com passagens por Varejo e Educação — sempre
+                entrando quando o negócio precisa traduzir escala em produto.
               </p>
 
               <div className="pt-2 border-t border-border space-y-2">

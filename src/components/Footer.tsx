@@ -19,7 +19,7 @@ const Footer = () => {
           <div>
             <p className="font-display text-lg font-semibold">Rafael Fernandes</p>
             <p className="text-background/60 text-sm mt-0.5">
-              Product Manager Sênior — Automotivo &amp; Varejo
+              Product Manager Sênior — IA, Agentes &amp; Integrações
             </p>
           </div>
 
@@ -36,7 +36,7 @@ const Footer = () => {
           </nav>
 
           <a
-            href="https://www.linkedin.com/in/rafael-fernandes-49aa9095/"
+            href="https://www.linkedin.com/in/rafaelfernandes-pm"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-background/70 hover:text-accent transition-smooth"
@@ -49,7 +49,7 @@ const Footer = () => {
 
         <div className="max-w-5xl mx-auto border-t border-background/15 mt-8 pt-6">
           <p className="text-background/50 text-xs">
-            © 2025 Rafael Fernandes Dos Santos Souza. Todos os direitos reservados.
+            © 2026 Rafael Fernandes Dos Santos Souza. Todos os direitos reservados.
           </p>
         </div>
       </div>

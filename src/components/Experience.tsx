@@ -102,12 +102,12 @@ const roles: Role[] = [
     ],
   },
   {
-    title: "Analista de Negócios → Product Owner",
+    title: "Analista de Negócios de Projetos",
     company: "DevPartner (Cliente BMW)",
     period: "Fev 2018 — Abr 2019",
     duration: "1 ano e 3 meses",
     summary:
-      "Meu primeiro papel de produto: gestor focal do cliente BMW, na interface entre negócio, tecnologia e governança — combinando Product Owner com práticas de PMO.",
+      "Meu primeiro papel de produto: gestor focal do cliente BMW, na interface entre negócio, tecnologia e governança — combinando atuação de Product Owner com práticas de PMO.",
     bullets: [
       "Refinamento de requisitos funcionais e técnicos, backlog estruturado com critérios de aceite",
       "Defini visão e roadmap da Plataforma Nacional de Recall, conectando clientes, concessionárias e mecânicos",
